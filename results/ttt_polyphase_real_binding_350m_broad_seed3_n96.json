@@ -1,0 +1,5987 @@
+{
+  "config": {
+    "model_dir": "third_party/ttt_mlp_350m",
+    "data": "data/squad/dev-v1.1.json",
+    "groups": 4,
+    "answer_kinds": "proper,number,other",
+    "groups_per_kind": 8,
+    "length": 512,
+    "seed": 20261006,
+    "residual_strength": 0.25,
+    "build_only": false,
+    "out": "ttt_polyphase_real_binding_350m_broad_seed3_n96.json"
+  },
+  "summary": {
+    "questions": 96,
+    "phase_accuracies": {
+      "base0": 0.5833333333333334,
+      "base4": 0.6041666666666666,
+      "base8": 0.5833333333333334,
+      "base12": 0.5729166666666666
+    },
+    "phase_mean_accuracy": 0.5859375,
+    "phase_worst_accuracy": 0.5729166666666666,
+    "phase_best_accuracy": 0.6041666666666666,
+    "prediction_flip_rate": 0.10416666666666667,
+    "correctness_flip_rate": 0.07291666666666667,
+    "residual_phase_accuracies": {
+      "base0": 0.59375,
+      "base4": 0.6041666666666666,
+      "base8": 0.59375,
+      "base12": 0.5625
+    },
+    "residual_default_accuracy": 0.59375,
+    "residual_worst_accuracy": 0.5625,
+    "residual_best_accuracy": 0.6041666666666666,
+    "residual_accuracy_span": 0.04166666666666663,
+    "residual_prediction_flip_rate": 0.09375,
+    "residual_correctness_flip_rate": 0.07291666666666667,
+    "poly4_accuracy": 0.6041666666666666,
+    "adaptive_accuracy": 0.59375,
+    "adaptive_expanded_rate": 0.052083333333333336,
+    "adaptive_mean_phase_count": 2.1041666666666665,
+    "adaptive_matches_poly4": 0.9791666666666666,
+    "directed_kernel": [
+      0.7,
+      0.25,
+      0.0,
+      0.05
+    ],
+    "directed_phase_accuracies": {
+      "base0": 0.6145833333333334,
+      "base4": 0.6041666666666666,
+      "base8": 0.5833333333333334,
+      "base12": 0.5729166666666666
+    },
+    "directed_default_accuracy": 0.6145833333333334,
+    "directed_worst_accuracy": 0.5729166666666666,
+    "directed_best_accuracy": 0.6145833333333334,
+    "directed_prediction_flip_rate": 0.09375,
+    "directed_correctness_flip_rate": 0.07291666666666667,
+    "residual_strength": 0.25,
+    "elapsed_seconds": 423.51574914900004,
+    "questions_per_second": 0.22667397893206934,
+    "peak_allocated_gib": 1.371053695678711,
+    "by_answer_kind": {
+      "number": {
+        "questions": 32,
+        "phase_accuracies": {
+          "base0": 0.28125,
+          "base4": 0.28125,
+          "base8": 0.25,
+          "base12": 0.28125
+        },
+        "phase_mean_accuracy": 0.2734375,
+        "phase_worst_accuracy": 0.25,
+        "phase_best_accuracy": 0.28125,
+        "prediction_flip_rate": 0.125,
+        "correctness_flip_rate": 0.03125,
+        "residual_phase_accuracies": {
+          "base0": 0.28125,
+          "base4": 0.28125,
+          "base8": 0.25,
+          "base12": 0.25
+        },
+        "residual_default_accuracy": 0.28125,
+        "residual_worst_accuracy": 0.25,
+        "residual_best_accuracy": 0.28125,
+        "residual_accuracy_span": 0.03125,
+        "residual_prediction_flip_rate": 0.09375,
+        "residual_correctness_flip_rate": 0.03125,
+        "poly4_accuracy": 0.25,
+        "adaptive_accuracy": 0.25,
+        "adaptive_expanded_rate": 0.0625,
+        "adaptive_mean_phase_count": 2.125,
+        "adaptive_matches_poly4": 0.96875,
+        "directed_kernel": [
+          0.7,
+          0.25,
+          0.0,
+          0.05
+        ],
+        "directed_phase_accuracies": {
+          "base0": 0.28125,
+          "base4": 0.25,
+          "base8": 0.25,
+          "base12": 0.28125
+        },
+        "directed_default_accuracy": 0.28125,
+        "directed_worst_accuracy": 0.25,
+        "directed_best_accuracy": 0.28125,
+        "directed_prediction_flip_rate": 0.09375,
+        "directed_correctness_flip_rate": 0.03125
+      },
+      "other": {
+        "questions": 32,
+        "phase_accuracies": {
+          "base0": 0.75,
+          "base4": 0.78125,
+          "base8": 0.78125,
+          "base12": 0.71875
+        },
+        "phase_mean_accuracy": 0.7578125,
+        "phase_worst_accuracy": 0.71875,
+        "phase_best_accuracy": 0.78125,
+        "prediction_flip_rate": 0.15625,
+        "correctness_flip_rate": 0.15625,
+        "residual_phase_accuracies": {
+          "base0": 0.75,
+          "base4": 0.78125,
+          "base8": 0.78125,
+          "base12": 0.71875
+        },
+        "residual_default_accuracy": 0.75,
+        "residual_worst_accuracy": 0.71875,
+        "residual_best_accuracy": 0.78125,
+        "residual_accuracy_span": 0.0625,
+        "residual_prediction_flip_rate": 0.15625,
+        "residual_correctness_flip_rate": 0.15625,
+        "poly4_accuracy": 0.8125,
+        "adaptive_accuracy": 0.8125,
+        "adaptive_expanded_rate": 0.09375,
+        "adaptive_mean_phase_count": 2.1875,
+        "adaptive_matches_poly4": 1.0,
+        "directed_kernel": [
+          0.7,
+          0.25,
+          0.0,
+          0.05
+        ],
+        "directed_phase_accuracies": {
+          "base0": 0.8125,
+          "base4": 0.8125,
+          "base8": 0.78125,
+          "base12": 0.71875
+        },
+        "directed_default_accuracy": 0.8125,
+        "directed_worst_accuracy": 0.71875,
+        "directed_best_accuracy": 0.8125,
+        "directed_prediction_flip_rate": 0.15625,
+        "directed_correctness_flip_rate": 0.15625
+      },
+      "proper": {
+        "questions": 32,
+        "phase_accuracies": {
+          "base0": 0.71875,
+          "base4": 0.75,
+          "base8": 0.71875,
+          "base12": 0.71875
+        },
+        "phase_mean_accuracy": 0.7265625,
+        "phase_worst_accuracy": 0.71875,
+        "phase_best_accuracy": 0.75,
+        "prediction_flip_rate": 0.03125,
+        "correctness_flip_rate": 0.03125,
+        "residual_phase_accuracies": {
+          "base0": 0.75,
+          "base4": 0.75,
+          "base8": 0.75,
+          "base12": 0.71875
+        },
+        "residual_default_accuracy": 0.75,
+        "residual_worst_accuracy": 0.71875,
+        "residual_best_accuracy": 0.75,
+        "residual_accuracy_span": 0.03125,
+        "residual_prediction_flip_rate": 0.03125,
+        "residual_correctness_flip_rate": 0.03125,
+        "poly4_accuracy": 0.75,
+        "adaptive_accuracy": 0.71875,
+        "adaptive_expanded_rate": 0.0,
+        "adaptive_mean_phase_count": 2.0,
+        "adaptive_matches_poly4": 0.96875,
+        "directed_kernel": [
+          0.7,
+          0.25,
+          0.0,
+          0.05
+        ],
+        "directed_phase_accuracies": {
+          "base0": 0.75,
+          "base4": 0.75,
+          "base8": 0.71875,
+          "base12": 0.71875
+        },
+        "directed_default_accuracy": 0.75,
+        "directed_worst_accuracy": 0.71875,
+        "directed_best_accuracy": 0.75,
+        "directed_prediction_flip_rate": 0.03125,
+        "directed_correctness_flip_rate": 0.03125
+      }
+    },
+    "by_boundary_distance": {
+      "edge_0_1": {
+        "questions": 26,
+        "phase_accuracies": {
+          "base0": 0.5384615384615384,
+          "base4": 0.5384615384615384,
+          "base8": 0.5384615384615384,
+          "base12": 0.5769230769230769
+        },
+        "phase_mean_accuracy": 0.5480769230769231,
+        "phase_worst_accuracy": 0.5384615384615384,
+        "phase_best_accuracy": 0.5769230769230769,
+        "prediction_flip_rate": 0.11538461538461539,
+        "correctness_flip_rate": 0.038461538461538464,
+        "residual_phase_accuracies": {
+          "base0": 0.5384615384615384,
+          "base4": 0.5384615384615384,
+          "base8": 0.5384615384615384,
+          "base12": 0.5769230769230769
+        },
+        "residual_default_accuracy": 0.5384615384615384,
+        "residual_worst_accuracy": 0.5384615384615384,
+        "residual_best_accuracy": 0.5769230769230769,
+        "residual_accuracy_span": 0.038461538461538436,
+        "residual_prediction_flip_rate": 0.07692307692307693,
+        "residual_correctness_flip_rate": 0.038461538461538464,
+        "poly4_accuracy": 0.5384615384615384,
+        "adaptive_accuracy": 0.5384615384615384,
+        "adaptive_expanded_rate": 0.038461538461538464,
+        "adaptive_mean_phase_count": 2.076923076923077,
+        "adaptive_matches_poly4": 0.9615384615384616,
+        "directed_kernel": [
+          0.7,
+          0.25,
+          0.0,
+          0.05
+        ],
+        "directed_phase_accuracies": {
+          "base0": 0.5384615384615384,
+          "base4": 0.5384615384615384,
+          "base8": 0.5384615384615384,
+          "base12": 0.5769230769230769
+        },
+        "directed_default_accuracy": 0.5384615384615384,
+        "directed_worst_accuracy": 0.5384615384615384,
+        "directed_best_accuracy": 0.5769230769230769,
+        "directed_prediction_flip_rate": 0.07692307692307693,
+        "directed_correctness_flip_rate": 0.038461538461538464
+      },
+      "near_2_3": {
+        "questions": 29,
+        "phase_accuracies": {
+          "base0": 0.5517241379310345,
+          "base4": 0.6206896551724138,
+          "base8": 0.5862068965517241,
+          "base12": 0.5172413793103449
+        },
+        "phase_mean_accuracy": 0.5689655172413793,
+        "phase_worst_accuracy": 0.5172413793103449,
+        "phase_best_accuracy": 0.6206896551724138,
+        "prediction_flip_rate": 0.10344827586206896,
+        "correctness_flip_rate": 0.10344827586206896,
+        "residual_phase_accuracies": {
+          "base0": 0.5517241379310345,
+          "base4": 0.6206896551724138,
+          "base8": 0.5862068965517241,
+          "base12": 0.5172413793103449
+        },
+        "residual_default_accuracy": 0.5517241379310345,
+        "residual_worst_accuracy": 0.5172413793103449,
+        "residual_best_accuracy": 0.6206896551724138,
+        "residual_accuracy_span": 0.10344827586206895,
+        "residual_prediction_flip_rate": 0.10344827586206896,
+        "residual_correctness_flip_rate": 0.10344827586206896,
+        "poly4_accuracy": 0.6206896551724138,
+        "adaptive_accuracy": 0.6206896551724138,
+        "adaptive_expanded_rate": 0.10344827586206896,
+        "adaptive_mean_phase_count": 2.206896551724138,
+        "adaptive_matches_poly4": 1.0,
+        "directed_kernel": [
+          0.7,
+          0.25,
+          0.0,
+          0.05
+        ],
+        "directed_phase_accuracies": {
+          "base0": 0.6206896551724138,
+          "base4": 0.6206896551724138,
+          "base8": 0.5862068965517241,
+          "base12": 0.5172413793103449
+        },
+        "directed_default_accuracy": 0.6206896551724138,
+        "directed_worst_accuracy": 0.5172413793103449,
+        "directed_best_accuracy": 0.6206896551724138,
+        "directed_prediction_flip_rate": 0.10344827586206896,
+        "directed_correctness_flip_rate": 0.10344827586206896
+      },
+      "interior_4_7": {
+        "questions": 30,
+        "phase_accuracies": {
+          "base0": 0.5666666666666667,
+          "base4": 0.5333333333333333,
+          "base8": 0.5333333333333333,
+          "base12": 0.5333333333333333
+        },
+        "phase_mean_accuracy": 0.5416666666666666,
+        "phase_worst_accuracy": 0.5333333333333333,
+        "phase_best_accuracy": 0.5666666666666667,
+        "prediction_flip_rate": 0.1,
+        "correctness_flip_rate": 0.06666666666666667,
+        "residual_phase_accuracies": {
+          "base0": 0.5666666666666667,
+          "base4": 0.5333333333333333,
+          "base8": 0.5333333333333333,
+          "base12": 0.5
+        },
+        "residual_default_accuracy": 0.5666666666666667,
+        "residual_worst_accuracy": 0.5,
+        "residual_best_accuracy": 0.5666666666666667,
+        "residual_accuracy_span": 0.06666666666666665,
+        "residual_prediction_flip_rate": 0.1,
+        "residual_correctness_flip_rate": 0.06666666666666667,
+        "poly4_accuracy": 0.5333333333333333,
+        "adaptive_accuracy": 0.5333333333333333,
+        "adaptive_expanded_rate": 0.03333333333333333,
+        "adaptive_mean_phase_count": 2.066666666666667,
+        "adaptive_matches_poly4": 1.0,
+        "directed_kernel": [
+          0.7,
+          0.25,
+          0.0,
+          0.05
+        ],
+        "directed_phase_accuracies": {
+          "base0": 0.5666666666666667,
+          "base4": 0.5333333333333333,
+          "base8": 0.5333333333333333,
+          "base12": 0.5333333333333333
+        },
+        "directed_default_accuracy": 0.5666666666666667,
+        "directed_worst_accuracy": 0.5333333333333333,
+        "directed_best_accuracy": 0.5666666666666667,
+        "directed_prediction_flip_rate": 0.1,
+        "directed_correctness_flip_rate": 0.06666666666666667
+      },
+      "missing": {
+        "questions": 11,
+        "phase_accuracies": {
+          "base0": 0.8181818181818182,
+          "base4": 0.9090909090909091,
+          "base8": 0.8181818181818182,
+          "base12": 0.8181818181818182
+        },
+        "phase_mean_accuracy": 0.8409090909090909,
+        "phase_worst_accuracy": 0.8181818181818182,
+        "phase_best_accuracy": 0.9090909090909091,
+        "prediction_flip_rate": 0.09090909090909091,
+        "correctness_flip_rate": 0.09090909090909091,
+        "residual_phase_accuracies": {
+          "base0": 0.9090909090909091,
+          "base4": 0.9090909090909091,
+          "base8": 0.9090909090909091,
+          "base12": 0.8181818181818182
+        },
+        "residual_default_accuracy": 0.9090909090909091,
+        "residual_worst_accuracy": 0.8181818181818182,
+        "residual_best_accuracy": 0.9090909090909091,
+        "residual_accuracy_span": 0.09090909090909083,
+        "residual_prediction_flip_rate": 0.09090909090909091,
+        "residual_correctness_flip_rate": 0.09090909090909091,
+        "poly4_accuracy": 0.9090909090909091,
+        "adaptive_accuracy": 0.8181818181818182,
+        "adaptive_expanded_rate": 0.0,
+        "adaptive_mean_phase_count": 2.0,
+        "adaptive_matches_poly4": 0.9090909090909091,
+        "directed_kernel": [
+          0.7,
+          0.25,
+          0.0,
+          0.05
+        ],
+        "directed_phase_accuracies": {
+          "base0": 0.9090909090909091,
+          "base4": 0.9090909090909091,
+          "base8": 0.8181818181818182,
+          "base12": 0.8181818181818182
+        },
+        "directed_default_accuracy": 0.9090909090909091,
+        "directed_worst_accuracy": 0.8181818181818182,
+        "directed_best_accuracy": 0.9090909090909091,
+        "directed_prediction_flip_rate": 0.09090909090909091,
+        "directed_correctness_flip_rate": 0.09090909090909091
+      }
+    }
+  },
+  "rows": [
+    {
+      "group": 0,
+      "query": 0,
+      "answer_kind": "other",
+      "prompt_tokens": 438,
+      "phase_losses": {
+        "base0": [
+          9.144437789916992,
+          16.14504051208496,
+          12.421246528625488,
+          14.742598533630371
+        ],
+        "base4": [
+          9.02376651763916,
+          16.098682403564453,
+          12.681360244750977,
+          14.457908630371094
+        ],
+        "base8": [
+          8.846929550170898,
+          15.998943328857422,
+          12.15316390991211,
+          14.462007522583008
+        ],
+        "base12": [
+          8.850683212280273,
+          16.10427474975586,
+          12.236331939697266,
+          14.495166778564453
+        ]
+      },
+      "phase_predictions": {
+        "base0": 0,
+        "base4": 0,
+        "base8": 0,
+        "base12": 0
+      },
+      "poly4_prediction": 0,
+      "adaptive_prediction": 0,
+      "residual_predictions": {
+        "base0": 0,
+        "base4": 0,
+        "base8": 0,
+        "base12": 0
+      },
+      "directed_predictions": {
+        "base0": 0,
+        "base4": 0,
+        "base8": 0,
+        "base12": 0
+      },
+      "expanded": 0,
+      "gold": 0,
+      "gold_token_positions": [
+        31
+      ],
+      "base_boundary_distance": 0
+    },
+    {
+      "group": 0,
+      "query": 1,
+      "answer_kind": "other",
+      "prompt_tokens": 444,
+      "phase_losses": {
+        "base0": [
+          11.030296325683594,
+          12.39497184753418,
+          11.587535858154297,
+          9.547358512878418
+        ],
+        "base4": [
+          11.135133743286133,
+          12.58819580078125,
+          11.904026985168457,
+          9.344362258911133
+        ],
+        "base8": [
+          11.078656196594238,
+          12.24517822265625,
+          11.913544654846191,
+          9.303437232971191
+        ],
+        "base12": [
+          11.105188369750977,
+          12.423402786254883,
+          11.67376708984375,
+          9.381625175476074
+        ]
+      },
+      "phase_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "poly4_prediction": 3,
+      "adaptive_prediction": 3,
+      "residual_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "directed_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "expanded": 0,
+      "gold": 1,
+      "gold_token_positions": [
+        178
+      ],
+      "base_boundary_distance": 2
+    },
+    {
+      "group": 0,
+      "query": 2,
+      "answer_kind": "other",
+      "prompt_tokens": 439,
+      "phase_losses": {
+        "base0": [
+          17.367366790771484,
+          18.259939193725586,
+          11.494466781616211,
+          14.739710807800293
+        ],
+        "base4": [
+          17.12771224975586,
+          18.02808952331543,
+          11.251595497131348,
+          14.335616111755371
+        ],
+        "base8": [
+          17.212919235229492,
+          18.106477737426758,
+          11.26681137084961,
+          14.500781059265137
+        ],
+        "base12": [
+          17.148035049438477,
+          18.1041202545166,
+          11.529762268066406,
+          14.460640907287598
+        ]
+      },
+      "phase_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "poly4_prediction": 2,
+      "adaptive_prediction": 2,
+      "residual_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "directed_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "expanded": 0,
+      "gold": 2,
+      "gold_token_positions": [
+        206
+      ],
+      "base_boundary_distance": 1
+    },
+    {
+      "group": 0,
+      "query": 3,
+      "answer_kind": "other",
+      "prompt_tokens": 438,
+      "phase_losses": {
+        "base0": [
+          15.644245147705078,
+          14.127958297729492,
+          12.710000991821289,
+          8.953827857971191
+        ],
+        "base4": [
+          15.384942054748535,
+          14.081417083740234,
+          12.768142700195312,
+          8.948421478271484
+        ],
+        "base8": [
+          15.539022445678711,
+          13.888526916503906,
+          12.700458526611328,
+          9.007336616516113
+        ],
+        "base12": [
+          15.58378791809082,
+          14.097026824951172,
+          12.690702438354492,
+          9.055466651916504
+        ]
+      },
+      "phase_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "poly4_prediction": 3,
+      "adaptive_prediction": 3,
+      "residual_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "directed_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "expanded": 0,
+      "gold": 3,
+      "gold_token_positions": [
+        311
+      ],
+      "base_boundary_distance": 7
+    },
+    {
+      "group": 1,
+      "query": 0,
+      "answer_kind": "number",
+      "prompt_tokens": 498,
+      "phase_losses": {
+        "base0": [
+          8.82785415649414,
+          7.926907539367676,
+          14.049721717834473,
+          15.499990463256836
+        ],
+        "base4": [
+          9.068675994873047,
+          8.156105041503906,
+          13.991541862487793,
+          15.487443923950195
+        ],
+        "base8": [
+          8.856916427612305,
+          7.978216171264648,
+          13.718148231506348,
+          15.095629692077637
+        ],
+        "base12": [
+          8.895035743713379,
+          7.9769287109375,
+          13.740545272827148,
+          15.32419490814209
+        ]
+      },
+      "phase_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "poly4_prediction": 1,
+      "adaptive_prediction": 1,
+      "residual_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "directed_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "expanded": 0,
+      "gold": 0,
+      "gold_token_positions": [
+        105
+      ],
+      "base_boundary_distance": 6
+    },
+    {
+      "group": 1,
+      "query": 1,
+      "answer_kind": "number",
+      "prompt_tokens": 502,
+      "phase_losses": {
+        "base0": [
+          9.645977020263672,
+          8.597657203674316,
+          13.271760940551758,
+          14.789517402648926
+        ],
+        "base4": [
+          9.208778381347656,
+          8.1861572265625,
+          12.910456657409668,
+          14.729445457458496
+        ],
+        "base8": [
+          9.565293312072754,
+          8.467193603515625,
+          12.85466194152832,
+          14.492826461791992
+        ],
+        "base12": [
+          9.64537525177002,
+          8.471752166748047,
+          12.96312427520752,
+          14.75045394897461
+        ]
+      },
+      "phase_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "poly4_prediction": 1,
+      "adaptive_prediction": 1,
+      "residual_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "directed_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "expanded": 0,
+      "gold": 1,
+      "gold_token_positions": [
+        62,
+        144
+      ],
+      "base_boundary_distance": 0
+    },
+    {
+      "group": 1,
+      "query": 2,
+      "answer_kind": "number",
+      "prompt_tokens": 496,
+      "phase_losses": {
+        "base0": [
+          11.79598331451416,
+          11.747442245483398,
+          13.483348846435547,
+          13.59052562713623
+        ],
+        "base4": [
+          11.91529369354248,
+          11.925573348999023,
+          13.70242977142334,
+          13.98982048034668
+        ],
+        "base8": [
+          11.997618675231934,
+          11.917588233947754,
+          13.855364799499512,
+          14.033003807067871
+        ],
+        "base12": [
+          12.239459991455078,
+          12.353964805603027,
+          13.807679176330566,
+          13.901259422302246
+        ]
+      },
+      "phase_predictions": {
+        "base0": 1,
+        "base4": 0,
+        "base8": 1,
+        "base12": 0
+      },
+      "poly4_prediction": 1,
+      "adaptive_prediction": 1,
+      "residual_predictions": {
+        "base0": 1,
+        "base4": 0,
+        "base8": 1,
+        "base12": 0
+      },
+      "directed_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 0
+      },
+      "expanded": 0,
+      "gold": 2,
+      "gold_token_positions": [
+        281
+      ],
+      "base_boundary_distance": 6
+    },
+    {
+      "group": 1,
+      "query": 3,
+      "answer_kind": "number",
+      "prompt_tokens": 499,
+      "phase_losses": {
+        "base0": [
+          12.230629920959473,
+          11.814762115478516,
+          13.345685005187988,
+          13.921035766601562
+        ],
+        "base4": [
+          12.52426528930664,
+          12.08526611328125,
+          13.421724319458008,
+          14.117647171020508
+        ],
+        "base8": [
+          12.1210298538208,
+          11.742688179016113,
+          13.465828895568848,
+          14.094463348388672
+        ],
+        "base12": [
+          12.425443649291992,
+          11.90369987487793,
+          13.631314277648926,
+          14.354371070861816
+        ]
+      },
+      "phase_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "poly4_prediction": 1,
+      "adaptive_prediction": 1,
+      "residual_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "directed_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "expanded": 0,
+      "gold": 3,
+      "gold_token_positions": [
+        378,
+        422
+      ],
+      "base_boundary_distance": 5
+    },
+    {
+      "group": 2,
+      "query": 0,
+      "answer_kind": "proper",
+      "prompt_tokens": 499,
+      "phase_losses": {
+        "base0": [
+          6.54978609085083,
+          13.605356216430664,
+          5.362949371337891,
+          9.82982063293457
+        ],
+        "base4": [
+          6.942014217376709,
+          13.974204063415527,
+          5.454339981079102,
+          9.737465858459473
+        ],
+        "base8": [
+          6.843975067138672,
+          13.790082931518555,
+          5.114052772521973,
+          9.652322769165039
+        ],
+        "base12": [
+          6.548676490783691,
+          13.553817749023438,
+          5.325405120849609,
+          9.554108619689941
+        ]
+      },
+      "phase_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "poly4_prediction": 2,
+      "adaptive_prediction": 2,
+      "residual_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "directed_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "expanded": 0,
+      "gold": 0,
+      "gold_token_positions": [
+        43,
+        127
+      ],
+      "base_boundary_distance": 0
+    },
+    {
+      "group": 2,
+      "query": 1,
+      "answer_kind": "proper",
+      "prompt_tokens": 503,
+      "phase_losses": {
+        "base0": [
+          10.650914192199707,
+          4.337060928344727,
+          5.918195724487305,
+          10.408838272094727
+        ],
+        "base4": [
+          11.129863739013672,
+          4.820573329925537,
+          6.088531494140625,
+          10.319425582885742
+        ],
+        "base8": [
+          10.915865898132324,
+          4.336513519287109,
+          5.68565034866333,
+          10.577238082885742
+        ],
+        "base12": [
+          10.651580810546875,
+          4.039817810058594,
+          5.842841148376465,
+          10.366791725158691
+        ]
+      },
+      "phase_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "poly4_prediction": 1,
+      "adaptive_prediction": 1,
+      "residual_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "directed_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "expanded": 0,
+      "gold": 1,
+      "gold_token_positions": [
+        238
+      ],
+      "base_boundary_distance": 1
+    },
+    {
+      "group": 2,
+      "query": 2,
+      "answer_kind": "proper",
+      "prompt_tokens": 501,
+      "phase_losses": {
+        "base0": [
+          12.82149887084961,
+          12.080422401428223,
+          6.455305099487305,
+          12.705790519714355
+        ],
+        "base4": [
+          13.432998657226562,
+          12.290078163146973,
+          6.493041515350342,
+          12.905391693115234
+        ],
+        "base8": [
+          13.181411743164062,
+          12.131457328796387,
+          6.4197564125061035,
+          12.969460487365723
+        ],
+        "base12": [
+          13.157378196716309,
+          12.112533569335938,
+          6.613393783569336,
+          12.550495147705078
+        ]
+      },
+      "phase_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "poly4_prediction": 2,
+      "adaptive_prediction": 2,
+      "residual_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "directed_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "expanded": 0,
+      "gold": 2,
+      "gold_token_positions": [
+        309
+      ],
+      "base_boundary_distance": 5
+    },
+    {
+      "group": 2,
+      "query": 3,
+      "answer_kind": "proper",
+      "prompt_tokens": 495,
+      "phase_losses": {
+        "base0": [
+          10.759456634521484,
+          10.343791961669922,
+          5.129819869995117,
+          5.15963077545166
+        ],
+        "base4": [
+          11.169123649597168,
+          10.578531265258789,
+          5.2457275390625,
+          4.347204208374023
+        ],
+        "base8": [
+          10.872258186340332,
+          10.218160629272461,
+          4.973788261413574,
+          4.990473747253418
+        ],
+        "base12": [
+          10.425979614257812,
+          9.71575927734375,
+          5.075702667236328,
+          5.451521873474121
+        ]
+      },
+      "phase_predictions": {
+        "base0": 2,
+        "base4": 3,
+        "base8": 2,
+        "base12": 2
+      },
+      "poly4_prediction": 3,
+      "adaptive_prediction": 2,
+      "residual_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 2
+      },
+      "directed_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 2,
+        "base12": 2
+      },
+      "expanded": 0,
+      "gold": 3,
+      "gold_token_positions": [],
+      "base_boundary_distance": null
+    },
+    {
+      "group": 3,
+      "query": 0,
+      "answer_kind": "proper",
+      "prompt_tokens": 504,
+      "phase_losses": {
+        "base0": [
+          6.725881099700928,
+          11.506479263305664,
+          13.587739944458008,
+          8.87567138671875
+        ],
+        "base4": [
+          6.204408645629883,
+          10.804427146911621,
+          13.896470069885254,
+          8.712718963623047
+        ],
+        "base8": [
+          6.920813083648682,
+          11.487724304199219,
+          13.708267211914062,
+          8.671304702758789
+        ],
+        "base12": [
+          6.721276760101318,
+          11.652711868286133,
+          13.367613792419434,
+          8.408309936523438
+        ]
+      },
+      "phase_predictions": {
+        "base0": 0,
+        "base4": 0,
+        "base8": 0,
+        "base12": 0
+      },
+      "poly4_prediction": 0,
+      "adaptive_prediction": 0,
+      "residual_predictions": {
+        "base0": 0,
+        "base4": 0,
+        "base8": 0,
+        "base12": 0
+      },
+      "directed_predictions": {
+        "base0": 0,
+        "base4": 0,
+        "base8": 0,
+        "base12": 0
+      },
+      "expanded": 0,
+      "gold": 0,
+      "gold_token_positions": [],
+      "base_boundary_distance": null
+    },
+    {
+      "group": 3,
+      "query": 1,
+      "answer_kind": "proper",
+      "prompt_tokens": 500,
+      "phase_losses": {
+        "base0": [
+          7.878371238708496,
+          6.283964157104492,
+          15.000772476196289,
+          8.930994033813477
+        ],
+        "base4": [
+          7.969381332397461,
+          5.9346771240234375,
+          15.005285263061523,
+          8.87081241607666
+        ],
+        "base8": [
+          7.531735897064209,
+          6.37803316116333,
+          15.065319061279297,
+          9.074739456176758
+        ],
+        "base12": [
+          7.599830150604248,
+          6.243739604949951,
+          14.844934463500977,
+          8.566165924072266
+        ]
+      },
+      "phase_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "poly4_prediction": 1,
+      "adaptive_prediction": 1,
+      "residual_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "directed_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "expanded": 0,
+      "gold": 1,
+      "gold_token_positions": [],
+      "base_boundary_distance": null
+    },
+    {
+      "group": 3,
+      "query": 2,
+      "answer_kind": "proper",
+      "prompt_tokens": 493,
+      "phase_losses": {
+        "base0": [
+          12.415480613708496,
+          12.773041725158691,
+          8.284160614013672,
+          11.044021606445312
+        ],
+        "base4": [
+          12.09680461883545,
+          12.005898475646973,
+          8.546305656433105,
+          11.061800003051758
+        ],
+        "base8": [
+          12.130396842956543,
+          12.241375923156738,
+          8.68699836730957,
+          10.663235664367676
+        ],
+        "base12": [
+          12.337719917297363,
+          12.588083267211914,
+          8.645448684692383,
+          10.237982749938965
+        ]
+      },
+      "phase_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "poly4_prediction": 2,
+      "adaptive_prediction": 2,
+      "residual_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "directed_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "expanded": 0,
+      "gold": 2,
+      "gold_token_positions": [
+        248
+      ],
+      "base_boundary_distance": 7
+    },
+    {
+      "group": 3,
+      "query": 3,
+      "answer_kind": "proper",
+      "prompt_tokens": 495,
+      "phase_losses": {
+        "base0": [
+          10.546546936035156,
+          13.89792537689209,
+          15.35462760925293,
+          1.7555800676345825
+        ],
+        "base4": [
+          10.397661209106445,
+          13.030057907104492,
+          15.464921951293945,
+          1.7552838325500488
+        ],
+        "base8": [
+          10.494680404663086,
+          13.574347496032715,
+          15.65973949432373,
+          1.8365486860275269
+        ],
+        "base12": [
+          10.389662742614746,
+          13.523985862731934,
+          15.250575065612793,
+          1.5165730714797974
+        ]
+      },
+      "phase_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "poly4_prediction": 3,
+      "adaptive_prediction": 3,
+      "residual_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "directed_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "expanded": 0,
+      "gold": 3,
+      "gold_token_positions": [
+        459
+      ],
+      "base_boundary_distance": 4
+    },
+    {
+      "group": 4,
+      "query": 0,
+      "answer_kind": "number",
+      "prompt_tokens": 487,
+      "phase_losses": {
+        "base0": [
+          9.698664665222168,
+          10.270617485046387,
+          9.24295711517334,
+          9.918791770935059
+        ],
+        "base4": [
+          9.324379920959473,
+          9.884321212768555,
+          8.95258617401123,
+          9.52867603302002
+        ],
+        "base8": [
+          9.144327163696289,
+          9.522881507873535,
+          8.947084426879883,
+          9.425830841064453
+        ],
+        "base12": [
+          9.40230941772461,
+          9.894128799438477,
+          9.159757614135742,
+          9.687725067138672
+        ]
+      },
+      "phase_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "poly4_prediction": 2,
+      "adaptive_prediction": 2,
+      "residual_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "directed_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "expanded": 0,
+      "gold": 0,
+      "gold_token_positions": [
+        68
+      ],
+      "base_boundary_distance": 4
+    },
+    {
+      "group": 4,
+      "query": 1,
+      "answer_kind": "number",
+      "prompt_tokens": 489,
+      "phase_losses": {
+        "base0": [
+          9.359594345092773,
+          9.40297794342041,
+          9.072530746459961,
+          9.364575386047363
+        ],
+        "base4": [
+          9.125211715698242,
+          9.193425178527832,
+          8.802172660827637,
+          9.06405258178711
+        ],
+        "base8": [
+          8.848093032836914,
+          8.826187133789062,
+          8.625380516052246,
+          8.726611137390137
+        ],
+        "base12": [
+          9.398319244384766,
+          9.313939094543457,
+          9.186417579650879,
+          9.331585884094238
+        ]
+      },
+      "phase_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "poly4_prediction": 2,
+      "adaptive_prediction": 2,
+      "residual_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "directed_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "expanded": 0,
+      "gold": 1,
+      "gold_token_positions": [
+        196
+      ],
+      "base_boundary_distance": 4
+    },
+    {
+      "group": 4,
+      "query": 2,
+      "answer_kind": "number",
+      "prompt_tokens": 487,
+      "phase_losses": {
+        "base0": [
+          8.445969581604004,
+          8.55586051940918,
+          8.275178909301758,
+          8.86776351928711
+        ],
+        "base4": [
+          8.618278503417969,
+          8.729354858398438,
+          8.409823417663574,
+          8.920161247253418
+        ],
+        "base8": [
+          8.594755172729492,
+          8.57884407043457,
+          8.394620895385742,
+          8.916671752929688
+        ],
+        "base12": [
+          8.53339958190918,
+          8.545034408569336,
+          8.403335571289062,
+          8.909294128417969
+        ]
+      },
+      "phase_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "poly4_prediction": 2,
+      "adaptive_prediction": 2,
+      "residual_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "directed_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "expanded": 0,
+      "gold": 2,
+      "gold_token_positions": [],
+      "base_boundary_distance": null
+    },
+    {
+      "group": 4,
+      "query": 3,
+      "answer_kind": "number",
+      "prompt_tokens": 485,
+      "phase_losses": {
+        "base0": [
+          8.549260139465332,
+          8.958660125732422,
+          9.001870155334473,
+          8.692119598388672
+        ],
+        "base4": [
+          8.349949836730957,
+          8.619916915893555,
+          8.701554298400879,
+          8.405905723571777
+        ],
+        "base8": [
+          8.652233123779297,
+          8.833386421203613,
+          9.098515510559082,
+          8.718703269958496
+        ],
+        "base12": [
+          8.425398826599121,
+          8.72762393951416,
+          8.996190071105957,
+          8.504727363586426
+        ]
+      },
+      "phase_predictions": {
+        "base0": 0,
+        "base4": 0,
+        "base8": 0,
+        "base12": 0
+      },
+      "poly4_prediction": 0,
+      "adaptive_prediction": 0,
+      "residual_predictions": {
+        "base0": 0,
+        "base4": 0,
+        "base8": 0,
+        "base12": 0
+      },
+      "directed_predictions": {
+        "base0": 0,
+        "base4": 0,
+        "base8": 0,
+        "base12": 0
+      },
+      "expanded": 0,
+      "gold": 3,
+      "gold_token_positions": [
+        129,
+        394
+      ],
+      "base_boundary_distance": 1
+    },
+    {
+      "group": 5,
+      "query": 0,
+      "answer_kind": "other",
+      "prompt_tokens": 510,
+      "phase_losses": {
+        "base0": [
+          13.67029857635498,
+          14.481124877929688,
+          15.598559379577637,
+          18.533889770507812
+        ],
+        "base4": [
+          13.6210298538208,
+          14.530961990356445,
+          15.446041107177734,
+          18.516366958618164
+        ],
+        "base8": [
+          13.726852416992188,
+          14.680667877197266,
+          15.699798583984375,
+          18.385995864868164
+        ],
+        "base12": [
+          13.594463348388672,
+          14.619988441467285,
+          15.470704078674316,
+          18.25538444519043
+        ]
+      },
+      "phase_predictions": {
+        "base0": 0,
+        "base4": 0,
+        "base8": 0,
+        "base12": 0
+      },
+      "poly4_prediction": 0,
+      "adaptive_prediction": 0,
+      "residual_predictions": {
+        "base0": 0,
+        "base4": 0,
+        "base8": 0,
+        "base12": 0
+      },
+      "directed_predictions": {
+        "base0": 0,
+        "base4": 0,
+        "base8": 0,
+        "base12": 0
+      },
+      "expanded": 0,
+      "gold": 0,
+      "gold_token_positions": [
+        104
+      ],
+      "base_boundary_distance": 7
+    },
+    {
+      "group": 5,
+      "query": 1,
+      "answer_kind": "other",
+      "prompt_tokens": 497,
+      "phase_losses": {
+        "base0": [
+          15.146917343139648,
+          15.20859146118164,
+          16.319177627563477,
+          18.729896545410156
+        ],
+        "base4": [
+          15.196653366088867,
+          14.805373191833496,
+          16.192350387573242,
+          18.924121856689453
+        ],
+        "base8": [
+          15.283143997192383,
+          14.946401596069336,
+          16.54521942138672,
+          18.757781982421875
+        ],
+        "base12": [
+          15.19599437713623,
+          15.277957916259766,
+          16.45091438293457,
+          19.03822135925293
+        ]
+      },
+      "phase_predictions": {
+        "base0": 0,
+        "base4": 1,
+        "base8": 1,
+        "base12": 0
+      },
+      "poly4_prediction": 1,
+      "adaptive_prediction": 1,
+      "residual_predictions": {
+        "base0": 0,
+        "base4": 1,
+        "base8": 1,
+        "base12": 0
+      },
+      "directed_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 0
+      },
+      "expanded": 1,
+      "gold": 1,
+      "gold_token_positions": [
+        220
+      ],
+      "base_boundary_distance": 3
+    },
+    {
+      "group": 5,
+      "query": 2,
+      "answer_kind": "other",
+      "prompt_tokens": 503,
+      "phase_losses": {
+        "base0": [
+          15.485207557678223,
+          16.374378204345703,
+          11.21513843536377,
+          15.884048461914062
+        ],
+        "base4": [
+          15.38969612121582,
+          16.471927642822266,
+          11.082544326782227,
+          15.57598876953125
+        ],
+        "base8": [
+          15.244382858276367,
+          16.20499610900879,
+          11.237765312194824,
+          15.086576461791992
+        ],
+        "base12": [
+          15.307694435119629,
+          16.133617401123047,
+          11.228768348693848,
+          15.399697303771973
+        ]
+      },
+      "phase_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "poly4_prediction": 2,
+      "adaptive_prediction": 2,
+      "residual_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "directed_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "expanded": 0,
+      "gold": 2,
+      "gold_token_positions": [
+        292
+      ],
+      "base_boundary_distance": 4
+    },
+    {
+      "group": 5,
+      "query": 3,
+      "answer_kind": "other",
+      "prompt_tokens": 500,
+      "phase_losses": {
+        "base0": [
+          12.83769416809082,
+          15.532610893249512,
+          13.668020248413086,
+          6.552499771118164
+        ],
+        "base4": [
+          12.74648666381836,
+          15.515116691589355,
+          13.464521408081055,
+          6.390618801116943
+        ],
+        "base8": [
+          13.088582038879395,
+          15.747227668762207,
+          13.892417907714844,
+          6.645874500274658
+        ],
+        "base12": [
+          12.8160400390625,
+          15.39950942993164,
+          13.59575080871582,
+          6.414797782897949
+        ]
+      },
+      "phase_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "poly4_prediction": 3,
+      "adaptive_prediction": 3,
+      "residual_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "directed_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "expanded": 0,
+      "gold": 3,
+      "gold_token_positions": [
+        436
+      ],
+      "base_boundary_distance": 4
+    },
+    {
+      "group": 6,
+      "query": 0,
+      "answer_kind": "proper",
+      "prompt_tokens": 433,
+      "phase_losses": {
+        "base0": [
+          7.366785526275635,
+          10.818624496459961,
+          8.968018531799316,
+          8.98940658569336
+        ],
+        "base4": [
+          6.969625473022461,
+          10.851030349731445,
+          9.101653099060059,
+          9.147253036499023
+        ],
+        "base8": [
+          7.341828346252441,
+          10.393280982971191,
+          8.581335067749023,
+          8.717737197875977
+        ],
+        "base12": [
+          7.014794826507568,
+          10.510786056518555,
+          8.755159378051758,
+          8.553397178649902
+        ]
+      },
+      "phase_predictions": {
+        "base0": 0,
+        "base4": 0,
+        "base8": 0,
+        "base12": 0
+      },
+      "poly4_prediction": 0,
+      "adaptive_prediction": 0,
+      "residual_predictions": {
+        "base0": 0,
+        "base4": 0,
+        "base8": 0,
+        "base12": 0
+      },
+      "directed_predictions": {
+        "base0": 0,
+        "base4": 0,
+        "base8": 0,
+        "base12": 0
+      },
+      "expanded": 0,
+      "gold": 0,
+      "gold_token_positions": [
+        130
+      ],
+      "base_boundary_distance": 2
+    },
+    {
+      "group": 6,
+      "query": 1,
+      "answer_kind": "proper",
+      "prompt_tokens": 430,
+      "phase_losses": {
+        "base0": [
+          12.224964141845703,
+          7.594616413116455,
+          10.001112937927246,
+          10.998079299926758
+        ],
+        "base4": [
+          11.780132293701172,
+          7.728592395782471,
+          10.120064735412598,
+          10.885702133178711
+        ],
+        "base8": [
+          11.71249008178711,
+          7.222281455993652,
+          10.0472993850708,
+          10.891681671142578
+        ],
+        "base12": [
+          11.6834135055542,
+          7.125454902648926,
+          9.801220893859863,
+          10.732990264892578
+        ]
+      },
+      "phase_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "poly4_prediction": 1,
+      "adaptive_prediction": 1,
+      "residual_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "directed_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "expanded": 0,
+      "gold": 1,
+      "gold_token_positions": [],
+      "base_boundary_distance": null
+    },
+    {
+      "group": 6,
+      "query": 2,
+      "answer_kind": "proper",
+      "prompt_tokens": 442,
+      "phase_losses": {
+        "base0": [
+          10.257134437561035,
+          10.298981666564941,
+          5.610287189483643,
+          8.090119361877441
+        ],
+        "base4": [
+          10.54563045501709,
+          10.275044441223145,
+          5.723045349121094,
+          7.852330207824707
+        ],
+        "base8": [
+          10.398009300231934,
+          9.675492286682129,
+          5.413033485412598,
+          8.19172477722168
+        ],
+        "base12": [
+          10.193855285644531,
+          9.752342224121094,
+          5.280813694000244,
+          8.232358932495117
+        ]
+      },
+      "phase_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "poly4_prediction": 2,
+      "adaptive_prediction": 2,
+      "residual_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "directed_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "expanded": 0,
+      "gold": 2,
+      "gold_token_positions": [
+        225
+      ],
+      "base_boundary_distance": 1
+    },
+    {
+      "group": 6,
+      "query": 3,
+      "answer_kind": "proper",
+      "prompt_tokens": 434,
+      "phase_losses": {
+        "base0": [
+          10.534835815429688,
+          11.1912260055542,
+          8.583941459655762,
+          4.404479503631592
+        ],
+        "base4": [
+          10.583379745483398,
+          10.848094940185547,
+          8.114558219909668,
+          4.285409927368164
+        ],
+        "base8": [
+          10.431760787963867,
+          10.567546844482422,
+          8.094980239868164,
+          4.428996562957764
+        ],
+        "base12": [
+          10.208711624145508,
+          10.544354438781738,
+          8.367167472839355,
+          4.537725925445557
+        ]
+      },
+      "phase_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "poly4_prediction": 3,
+      "adaptive_prediction": 3,
+      "residual_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "directed_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "expanded": 0,
+      "gold": 3,
+      "gold_token_positions": [],
+      "base_boundary_distance": null
+    },
+    {
+      "group": 7,
+      "query": 0,
+      "answer_kind": "number",
+      "prompt_tokens": 500,
+      "phase_losses": {
+        "base0": [
+          7.35938835144043,
+          7.078366279602051,
+          15.960113525390625,
+          8.627354621887207
+        ],
+        "base4": [
+          7.347440719604492,
+          7.0492682456970215,
+          15.729633331298828,
+          8.2008056640625
+        ],
+        "base8": [
+          7.384001731872559,
+          7.147021293640137,
+          15.8919677734375,
+          8.408061981201172
+        ],
+        "base12": [
+          7.405220985412598,
+          7.152291297912598,
+          15.682670593261719,
+          8.656784057617188
+        ]
+      },
+      "phase_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "poly4_prediction": 1,
+      "adaptive_prediction": 1,
+      "residual_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "directed_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "expanded": 0,
+      "gold": 0,
+      "gold_token_positions": [
+        76
+      ],
+      "base_boundary_distance": 3
+    },
+    {
+      "group": 7,
+      "query": 1,
+      "answer_kind": "number",
+      "prompt_tokens": 494,
+      "phase_losses": {
+        "base0": [
+          8.870109558105469,
+          8.856073379516602,
+          17.746261596679688,
+          9.837298393249512
+        ],
+        "base4": [
+          8.20107364654541,
+          8.171127319335938,
+          17.187397003173828,
+          8.77574348449707
+        ],
+        "base8": [
+          8.582307815551758,
+          8.472350120544434,
+          17.449125289916992,
+          9.298251152038574
+        ],
+        "base12": [
+          8.797164916992188,
+          8.733028411865234,
+          17.61969757080078,
+          10.021089553833008
+        ]
+      },
+      "phase_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "poly4_prediction": 1,
+      "adaptive_prediction": 1,
+      "residual_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "directed_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "expanded": 0,
+      "gold": 1,
+      "gold_token_positions": [
+        162
+      ],
+      "base_boundary_distance": 2
+    },
+    {
+      "group": 7,
+      "query": 2,
+      "answer_kind": "number",
+      "prompt_tokens": 502,
+      "phase_losses": {
+        "base0": [
+          11.81706428527832,
+          10.925865173339844,
+          12.553893089294434,
+          10.013687133789062
+        ],
+        "base4": [
+          11.071053504943848,
+          10.184521675109863,
+          12.581424713134766,
+          9.247187614440918
+        ],
+        "base8": [
+          10.80517292022705,
+          9.954310417175293,
+          12.603792190551758,
+          9.288755416870117
+        ],
+        "base12": [
+          11.411896705627441,
+          10.530665397644043,
+          12.391093254089355,
+          9.73720932006836
+        ]
+      },
+      "phase_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "poly4_prediction": 3,
+      "adaptive_prediction": 3,
+      "residual_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "directed_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "expanded": 0,
+      "gold": 2,
+      "gold_token_positions": [
+        289
+      ],
+      "base_boundary_distance": 1
+    },
+    {
+      "group": 7,
+      "query": 3,
+      "answer_kind": "number",
+      "prompt_tokens": 499,
+      "phase_losses": {
+        "base0": [
+          8.945996284484863,
+          8.33161735534668,
+          15.77627944946289,
+          9.592935562133789
+        ],
+        "base4": [
+          8.891751289367676,
+          8.266057968139648,
+          15.628335952758789,
+          9.381441116333008
+        ],
+        "base8": [
+          8.882980346679688,
+          8.26172924041748,
+          15.9490385055542,
+          9.525474548339844
+        ],
+        "base12": [
+          9.096429824829102,
+          8.45858097076416,
+          15.662131309509277,
+          9.859314918518066
+        ]
+      },
+      "phase_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "poly4_prediction": 1,
+      "adaptive_prediction": 1,
+      "residual_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "directed_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "expanded": 0,
+      "gold": 3,
+      "gold_token_positions": [
+        231,
+        473
+      ],
+      "base_boundary_distance": 6
+    },
+    {
+      "group": 8,
+      "query": 0,
+      "answer_kind": "number",
+      "prompt_tokens": 481,
+      "phase_losses": {
+        "base0": [
+          8.010284423828125,
+          8.25830078125,
+          4.25506591796875,
+          8.491040229797363
+        ],
+        "base4": [
+          8.232264518737793,
+          8.425154685974121,
+          4.728548049926758,
+          8.538418769836426
+        ],
+        "base8": [
+          8.024014472961426,
+          8.275177001953125,
+          4.507853984832764,
+          8.340147018432617
+        ],
+        "base12": [
+          7.824530601501465,
+          8.089849472045898,
+          4.418209075927734,
+          8.301374435424805
+        ]
+      },
+      "phase_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "poly4_prediction": 2,
+      "adaptive_prediction": 2,
+      "residual_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "directed_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "expanded": 0,
+      "gold": 0,
+      "gold_token_positions": [
+        99
+      ],
+      "base_boundary_distance": 3
+    },
+    {
+      "group": 8,
+      "query": 1,
+      "answer_kind": "number",
+      "prompt_tokens": 484,
+      "phase_losses": {
+        "base0": [
+          6.728609561920166,
+          7.20834493637085,
+          5.005430221557617,
+          7.69762659072876
+        ],
+        "base4": [
+          6.943705081939697,
+          7.409743309020996,
+          4.927992820739746,
+          7.84586238861084
+        ],
+        "base8": [
+          6.534992218017578,
+          7.078763961791992,
+          4.997450828552246,
+          7.501862525939941
+        ],
+        "base12": [
+          6.594926357269287,
+          7.123173713684082,
+          5.034072399139404,
+          7.6186203956604
+        ]
+      },
+      "phase_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "poly4_prediction": 2,
+      "adaptive_prediction": 2,
+      "residual_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "directed_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "expanded": 0,
+      "gold": 1,
+      "gold_token_positions": [
+        128,
+        185
+      ],
+      "base_boundary_distance": 0
+    },
+    {
+      "group": 8,
+      "query": 2,
+      "answer_kind": "number",
+      "prompt_tokens": 480,
+      "phase_losses": {
+        "base0": [
+          7.609999179840088,
+          8.292608261108398,
+          4.397500514984131,
+          8.03189468383789
+        ],
+        "base4": [
+          7.52023983001709,
+          8.247392654418945,
+          4.727119445800781,
+          7.94434928894043
+        ],
+        "base8": [
+          7.28597354888916,
+          8.060493469238281,
+          4.514169216156006,
+          7.763219356536865
+        ],
+        "base12": [
+          7.560434341430664,
+          8.276773452758789,
+          4.359865665435791,
+          8.057220458984375
+        ]
+      },
+      "phase_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "poly4_prediction": 2,
+      "adaptive_prediction": 2,
+      "residual_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "directed_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "expanded": 0,
+      "gold": 2,
+      "gold_token_positions": [],
+      "base_boundary_distance": null
+    },
+    {
+      "group": 8,
+      "query": 3,
+      "answer_kind": "number",
+      "prompt_tokens": 484,
+      "phase_losses": {
+        "base0": [
+          6.69559907913208,
+          7.180056095123291,
+          4.296067237854004,
+          7.645092010498047
+        ],
+        "base4": [
+          6.624061584472656,
+          7.204475402832031,
+          4.4592390060424805,
+          7.577261924743652
+        ],
+        "base8": [
+          6.3304243087768555,
+          6.900151252746582,
+          4.486799240112305,
+          7.333930015563965
+        ],
+        "base12": [
+          6.385662078857422,
+          6.933246612548828,
+          4.456145286560059,
+          7.39030647277832
+        ]
+      },
+      "phase_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "poly4_prediction": 2,
+      "adaptive_prediction": 2,
+      "residual_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "directed_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "expanded": 0,
+      "gold": 3,
+      "gold_token_positions": [
+        380
+      ],
+      "base_boundary_distance": 3
+    },
+    {
+      "group": 9,
+      "query": 0,
+      "answer_kind": "number",
+      "prompt_tokens": 510,
+      "phase_losses": {
+        "base0": [
+          7.3253703117370605,
+          6.919574737548828,
+          7.149673938751221,
+          7.6930108070373535
+        ],
+        "base4": [
+          7.758294105529785,
+          7.393346786499023,
+          7.641523361206055,
+          8.150384902954102
+        ],
+        "base8": [
+          7.881765842437744,
+          7.483855247497559,
+          7.699413776397705,
+          8.310065269470215
+        ],
+        "base12": [
+          7.979687690734863,
+          7.524445533752441,
+          7.8296732902526855,
+          8.138731002807617
+        ]
+      },
+      "phase_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "poly4_prediction": 1,
+      "adaptive_prediction": 1,
+      "residual_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "directed_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "expanded": 0,
+      "gold": 0,
+      "gold_token_positions": [
+        55
+      ],
+      "base_boundary_distance": 7
+    },
+    {
+      "group": 9,
+      "query": 1,
+      "answer_kind": "number",
+      "prompt_tokens": 503,
+      "phase_losses": {
+        "base0": [
+          8.603250503540039,
+          8.570931434631348,
+          8.796957015991211,
+          9.417122840881348
+        ],
+        "base4": [
+          8.83967113494873,
+          8.815361022949219,
+          9.066156387329102,
+          9.590713500976562
+        ],
+        "base8": [
+          8.636792182922363,
+          8.78272819519043,
+          8.784722328186035,
+          9.677495956420898
+        ],
+        "base12": [
+          8.871238708496094,
+          8.86526870727539,
+          9.04749584197998,
+          9.739227294921875
+        ]
+      },
+      "phase_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 0,
+        "base12": 1
+      },
+      "poly4_prediction": 0,
+      "adaptive_prediction": 0,
+      "residual_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 0,
+        "base12": 0
+      },
+      "directed_predictions": {
+        "base0": 1,
+        "base4": 0,
+        "base8": 0,
+        "base12": 1
+      },
+      "expanded": 1,
+      "gold": 1,
+      "gold_token_positions": [
+        197
+      ],
+      "base_boundary_distance": 5
+    },
+    {
+      "group": 9,
+      "query": 2,
+      "answer_kind": "number",
+      "prompt_tokens": 506,
+      "phase_losses": {
+        "base0": [
+          7.970761299133301,
+          7.970360279083252,
+          8.175138473510742,
+          8.598691940307617
+        ],
+        "base4": [
+          8.069318771362305,
+          8.151286125183105,
+          8.302507400512695,
+          8.76717472076416
+        ],
+        "base8": [
+          7.904031753540039,
+          7.933217525482178,
+          7.960936546325684,
+          8.647344589233398
+        ],
+        "base12": [
+          8.257030487060547,
+          8.257611274719238,
+          8.447919845581055,
+          8.951742172241211
+        ]
+      },
+      "phase_predictions": {
+        "base0": 1,
+        "base4": 0,
+        "base8": 0,
+        "base12": 0
+      },
+      "poly4_prediction": 0,
+      "adaptive_prediction": 0,
+      "residual_predictions": {
+        "base0": 0,
+        "base4": 0,
+        "base8": 0,
+        "base12": 0
+      },
+      "directed_predictions": {
+        "base0": 0,
+        "base4": 0,
+        "base8": 0,
+        "base12": 0
+      },
+      "expanded": 1,
+      "gold": 2,
+      "gold_token_positions": [
+        384
+      ],
+      "base_boundary_distance": 0
+    },
+    {
+      "group": 9,
+      "query": 3,
+      "answer_kind": "number",
+      "prompt_tokens": 506,
+      "phase_losses": {
+        "base0": [
+          7.24879264831543,
+          7.312756538391113,
+          7.307966232299805,
+          7.6745758056640625
+        ],
+        "base4": [
+          7.73016357421875,
+          7.789813041687012,
+          7.8599114418029785,
+          8.100869178771973
+        ],
+        "base8": [
+          7.431571960449219,
+          7.625726699829102,
+          7.5689239501953125,
+          7.946773529052734
+        ],
+        "base12": [
+          7.221648216247559,
+          7.398331642150879,
+          7.3552961349487305,
+          7.865280628204346
+        ]
+      },
+      "phase_predictions": {
+        "base0": 0,
+        "base4": 0,
+        "base8": 0,
+        "base12": 0
+      },
+      "poly4_prediction": 0,
+      "adaptive_prediction": 0,
+      "residual_predictions": {
+        "base0": 0,
+        "base4": 0,
+        "base8": 0,
+        "base12": 0
+      },
+      "directed_predictions": {
+        "base0": 0,
+        "base4": 0,
+        "base8": 0,
+        "base12": 0
+      },
+      "expanded": 0,
+      "gold": 3,
+      "gold_token_positions": [
+        410
+      ],
+      "base_boundary_distance": 5
+    },
+    {
+      "group": 10,
+      "query": 0,
+      "answer_kind": "proper",
+      "prompt_tokens": 438,
+      "phase_losses": {
+        "base0": [
+          1.7089040279388428,
+          9.274837493896484,
+          7.119884490966797,
+          8.692927360534668
+        ],
+        "base4": [
+          1.7074155807495117,
+          9.2340087890625,
+          7.068894386291504,
+          8.631465911865234
+        ],
+        "base8": [
+          1.7848055362701416,
+          9.756640434265137,
+          6.826545715332031,
+          8.8659029006958
+        ],
+        "base12": [
+          1.7291804552078247,
+          9.80456829071045,
+          6.869815826416016,
+          8.877309799194336
+        ]
+      },
+      "phase_predictions": {
+        "base0": 0,
+        "base4": 0,
+        "base8": 0,
+        "base12": 0
+      },
+      "poly4_prediction": 0,
+      "adaptive_prediction": 0,
+      "residual_predictions": {
+        "base0": 0,
+        "base4": 0,
+        "base8": 0,
+        "base12": 0
+      },
+      "directed_predictions": {
+        "base0": 0,
+        "base4": 0,
+        "base8": 0,
+        "base12": 0
+      },
+      "expanded": 0,
+      "gold": 0,
+      "gold_token_positions": [
+        133
+      ],
+      "base_boundary_distance": 5
+    },
+    {
+      "group": 10,
+      "query": 1,
+      "answer_kind": "proper",
+      "prompt_tokens": 429,
+      "phase_losses": {
+        "base0": [
+          10.238800048828125,
+          3.2222862243652344,
+          7.6563401222229,
+          7.417977809906006
+        ],
+        "base4": [
+          10.375458717346191,
+          3.7087059020996094,
+          7.65598201751709,
+          7.700168132781982
+        ],
+        "base8": [
+          10.303760528564453,
+          3.796905040740967,
+          7.5043416023254395,
+          7.833129405975342
+        ],
+        "base12": [
+          10.297250747680664,
+          3.1726295948028564,
+          7.689764976501465,
+          7.870882034301758
+        ]
+      },
+      "phase_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "poly4_prediction": 1,
+      "adaptive_prediction": 1,
+      "residual_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "directed_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "expanded": 0,
+      "gold": 1,
+      "gold_token_positions": [
+        155,
+        173
+      ],
+      "base_boundary_distance": 2
+    },
+    {
+      "group": 10,
+      "query": 2,
+      "answer_kind": "proper",
+      "prompt_tokens": 440,
+      "phase_losses": {
+        "base0": [
+          6.6987996101379395,
+          10.276994705200195,
+          3.8639931678771973,
+          8.240245819091797
+        ],
+        "base4": [
+          6.492674827575684,
+          10.149639129638672,
+          3.7327115535736084,
+          8.219263076782227
+        ],
+        "base8": [
+          6.477945327758789,
+          10.663567543029785,
+          3.8628475666046143,
+          8.164872169494629
+        ],
+        "base12": [
+          6.870318412780762,
+          10.018698692321777,
+          3.840012788772583,
+          8.155049324035645
+        ]
+      },
+      "phase_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "poly4_prediction": 2,
+      "adaptive_prediction": 2,
+      "residual_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "directed_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "expanded": 0,
+      "gold": 2,
+      "gold_token_positions": [
+        306
+      ],
+      "base_boundary_distance": 2
+    },
+    {
+      "group": 10,
+      "query": 3,
+      "answer_kind": "proper",
+      "prompt_tokens": 433,
+      "phase_losses": {
+        "base0": [
+          12.093546867370605,
+          12.673856735229492,
+          11.798938751220703,
+          4.342382431030273
+        ],
+        "base4": [
+          12.18558120727539,
+          12.321146011352539,
+          11.438335418701172,
+          4.574347972869873
+        ],
+        "base8": [
+          12.11050033569336,
+          12.933603286743164,
+          11.524221420288086,
+          4.588903903961182
+        ],
+        "base12": [
+          12.378829956054688,
+          12.308147430419922,
+          11.556697845458984,
+          4.484989166259766
+        ]
+      },
+      "phase_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "poly4_prediction": 3,
+      "adaptive_prediction": 3,
+      "residual_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "directed_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "expanded": 0,
+      "gold": 3,
+      "gold_token_positions": [
+        402
+      ],
+      "base_boundary_distance": 2
+    },
+    {
+      "group": 11,
+      "query": 0,
+      "answer_kind": "proper",
+      "prompt_tokens": 509,
+      "phase_losses": {
+        "base0": [
+          6.960262775421143,
+          7.5408172607421875,
+          9.60191535949707,
+          8.501609802246094
+        ],
+        "base4": [
+          7.046740531921387,
+          7.545556545257568,
+          9.879793167114258,
+          8.715749740600586
+        ],
+        "base8": [
+          7.050466537475586,
+          7.887323379516602,
+          8.971015930175781,
+          8.137784957885742
+        ],
+        "base12": [
+          7.238255023956299,
+          8.068794250488281,
+          9.601655960083008,
+          8.51713752746582
+        ]
+      },
+      "phase_predictions": {
+        "base0": 0,
+        "base4": 0,
+        "base8": 0,
+        "base12": 0
+      },
+      "poly4_prediction": 0,
+      "adaptive_prediction": 0,
+      "residual_predictions": {
+        "base0": 0,
+        "base4": 0,
+        "base8": 0,
+        "base12": 0
+      },
+      "directed_predictions": {
+        "base0": 0,
+        "base4": 0,
+        "base8": 0,
+        "base12": 0
+      },
+      "expanded": 0,
+      "gold": 0,
+      "gold_token_positions": [
+        44
+      ],
+      "base_boundary_distance": 3
+    },
+    {
+      "group": 11,
+      "query": 1,
+      "answer_kind": "proper",
+      "prompt_tokens": 510,
+      "phase_losses": {
+        "base0": [
+          7.519771575927734,
+          6.438682556152344,
+          10.918566703796387,
+          10.638280868530273
+        ],
+        "base4": [
+          7.488651275634766,
+          6.275583267211914,
+          10.761770248413086,
+          10.562761306762695
+        ],
+        "base8": [
+          7.5543975830078125,
+          6.459678649902344,
+          10.33003044128418,
+          10.324102401733398
+        ],
+        "base12": [
+          7.591384410858154,
+          6.829352378845215,
+          11.030081748962402,
+          10.827510833740234
+        ]
+      },
+      "phase_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "poly4_prediction": 1,
+      "adaptive_prediction": 1,
+      "residual_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "directed_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "expanded": 0,
+      "gold": 1,
+      "gold_token_positions": [
+        35,
+        141
+      ],
+      "base_boundary_distance": 2
+    },
+    {
+      "group": 11,
+      "query": 2,
+      "answer_kind": "proper",
+      "prompt_tokens": 505,
+      "phase_losses": {
+        "base0": [
+          8.878623008728027,
+          12.766114234924316,
+          8.260488510131836,
+          6.385303497314453
+        ],
+        "base4": [
+          8.872685432434082,
+          13.031689643859863,
+          8.22131061553955,
+          6.24575138092041
+        ],
+        "base8": [
+          8.026954650878906,
+          13.088726997375488,
+          7.309187889099121,
+          5.552948951721191
+        ],
+        "base12": [
+          8.410497665405273,
+          12.673696517944336,
+          7.848995208740234,
+          6.042732238769531
+        ]
+      },
+      "phase_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "poly4_prediction": 3,
+      "adaptive_prediction": 3,
+      "residual_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "directed_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "expanded": 0,
+      "gold": 2,
+      "gold_token_positions": [
+        270
+      ],
+      "base_boundary_distance": 1
+    },
+    {
+      "group": 11,
+      "query": 3,
+      "answer_kind": "proper",
+      "prompt_tokens": 503,
+      "phase_losses": {
+        "base0": [
+          8.626924514770508,
+          14.764827728271484,
+          7.065765857696533,
+          4.056641578674316
+        ],
+        "base4": [
+          8.306835174560547,
+          14.950508117675781,
+          6.935125827789307,
+          3.956505298614502
+        ],
+        "base8": [
+          8.090676307678223,
+          15.136917114257812,
+          6.671791076660156,
+          3.9265530109405518
+        ],
+        "base12": [
+          8.818370819091797,
+          15.131832122802734,
+          7.254436016082764,
+          4.185949802398682
+        ]
+      },
+      "phase_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "poly4_prediction": 3,
+      "adaptive_prediction": 3,
+      "residual_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "directed_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "expanded": 0,
+      "gold": 3,
+      "gold_token_positions": [
+        440
+      ],
+      "base_boundary_distance": 7
+    },
+    {
+      "group": 12,
+      "query": 0,
+      "answer_kind": "other",
+      "prompt_tokens": 481,
+      "phase_losses": {
+        "base0": [
+          11.750986099243164,
+          15.097930908203125,
+          9.424996376037598,
+          10.817452430725098
+        ],
+        "base4": [
+          11.57199478149414,
+          14.455406188964844,
+          9.048849105834961,
+          9.816789627075195
+        ],
+        "base8": [
+          11.292332649230957,
+          14.560704231262207,
+          9.185868263244629,
+          10.478157997131348
+        ],
+        "base12": [
+          11.269681930541992,
+          14.650991439819336,
+          9.572687149047852,
+          10.733357429504395
+        ]
+      },
+      "phase_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "poly4_prediction": 2,
+      "adaptive_prediction": 2,
+      "residual_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "directed_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "expanded": 0,
+      "gold": 0,
+      "gold_token_positions": [
+        60
+      ],
+      "base_boundary_distance": 3
+    },
+    {
+      "group": 12,
+      "query": 1,
+      "answer_kind": "other",
+      "prompt_tokens": 480,
+      "phase_losses": {
+        "base0": [
+          14.74209976196289,
+          10.91982650756836,
+          10.074430465698242,
+          12.575078010559082
+        ],
+        "base4": [
+          14.80337905883789,
+          11.088418960571289,
+          9.29627799987793,
+          11.577068328857422
+        ],
+        "base8": [
+          14.764724731445312,
+          10.827749252319336,
+          9.597923278808594,
+          11.837607383728027
+        ],
+        "base12": [
+          14.939931869506836,
+          11.434417724609375,
+          9.892353057861328,
+          12.215231895446777
+        ]
+      },
+      "phase_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "poly4_prediction": 2,
+      "adaptive_prediction": 2,
+      "residual_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "directed_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "expanded": 0,
+      "gold": 1,
+      "gold_token_positions": [
+        163
+      ],
+      "base_boundary_distance": 3
+    },
+    {
+      "group": 12,
+      "query": 2,
+      "answer_kind": "other",
+      "prompt_tokens": 479,
+      "phase_losses": {
+        "base0": [
+          14.443662643432617,
+          13.813426971435547,
+          6.6731743812561035,
+          8.510601043701172
+        ],
+        "base4": [
+          14.620247840881348,
+          13.804548263549805,
+          6.938650608062744,
+          8.714128494262695
+        ],
+        "base8": [
+          14.673307418823242,
+          14.005640029907227,
+          6.928264141082764,
+          8.430354118347168
+        ],
+        "base12": [
+          14.690327644348145,
+          14.19629955291748,
+          6.739360809326172,
+          8.441753387451172
+        ]
+      },
+      "phase_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "poly4_prediction": 2,
+      "adaptive_prediction": 2,
+      "residual_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "directed_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "expanded": 0,
+      "gold": 2,
+      "gold_token_positions": [
+        206,
+        242,
+        295
+      ],
+      "base_boundary_distance": 1
+    },
+    {
+      "group": 12,
+      "query": 3,
+      "answer_kind": "other",
+      "prompt_tokens": 483,
+      "phase_losses": {
+        "base0": [
+          14.040946960449219,
+          14.405916213989258,
+          8.553471565246582,
+          6.903008937835693
+        ],
+        "base4": [
+          13.607065200805664,
+          13.783771514892578,
+          8.388668060302734,
+          6.036513328552246
+        ],
+        "base8": [
+          13.465509414672852,
+          13.830696105957031,
+          8.296211242675781,
+          5.782426357269287
+        ],
+        "base12": [
+          13.598638534545898,
+          14.17432975769043,
+          8.62093734741211,
+          6.194177627563477
+        ]
+      },
+      "phase_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "poly4_prediction": 3,
+      "adaptive_prediction": 3,
+      "residual_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "directed_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "expanded": 0,
+      "gold": 3,
+      "gold_token_positions": [
+        327,
+        359,
+        394,
+        412
+      ],
+      "base_boundary_distance": 3
+    },
+    {
+      "group": 13,
+      "query": 0,
+      "answer_kind": "number",
+      "prompt_tokens": 448,
+      "phase_losses": {
+        "base0": [
+          6.270528793334961,
+          6.671799659729004,
+          2.7353384494781494,
+          6.317190170288086
+        ],
+        "base4": [
+          6.268032073974609,
+          6.732939720153809,
+          2.757514715194702,
+          6.350254058837891
+        ],
+        "base8": [
+          6.610820770263672,
+          6.899559020996094,
+          2.7597625255584717,
+          6.51678466796875
+        ],
+        "base12": [
+          6.834322929382324,
+          7.117153167724609,
+          2.6618919372558594,
+          6.681741237640381
+        ]
+      },
+      "phase_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "poly4_prediction": 2,
+      "adaptive_prediction": 2,
+      "residual_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "directed_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "expanded": 0,
+      "gold": 0,
+      "gold_token_positions": [
+        344
+      ],
+      "base_boundary_distance": 7
+    },
+    {
+      "group": 13,
+      "query": 1,
+      "answer_kind": "number",
+      "prompt_tokens": 458,
+      "phase_losses": {
+        "base0": [
+          7.14460563659668,
+          7.353537082672119,
+          3.7661004066467285,
+          7.037125110626221
+        ],
+        "base4": [
+          7.355958938598633,
+          7.682628631591797,
+          3.683326244354248,
+          7.391765594482422
+        ],
+        "base8": [
+          7.013514041900635,
+          7.208271026611328,
+          3.6428651809692383,
+          6.929697036743164
+        ],
+        "base12": [
+          7.409337043762207,
+          7.5217180252075195,
+          3.77622127532959,
+          7.287206172943115
+        ]
+      },
+      "phase_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "poly4_prediction": 2,
+      "adaptive_prediction": 2,
+      "residual_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "directed_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "expanded": 0,
+      "gold": 1,
+      "gold_token_positions": [
+        230
+      ],
+      "base_boundary_distance": 6
+    },
+    {
+      "group": 13,
+      "query": 2,
+      "answer_kind": "number",
+      "prompt_tokens": 450,
+      "phase_losses": {
+        "base0": [
+          7.577949523925781,
+          8.126296043395996,
+          3.387826442718506,
+          7.858328819274902
+        ],
+        "base4": [
+          7.790159225463867,
+          8.244157791137695,
+          3.4201252460479736,
+          8.006858825683594
+        ],
+        "base8": [
+          7.692342758178711,
+          8.064252853393555,
+          3.474909782409668,
+          7.770370006561279
+        ],
+        "base12": [
+          7.782536506652832,
+          8.109417915344238,
+          3.486846685409546,
+          7.805057525634766
+        ]
+      },
+      "phase_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "poly4_prediction": 2,
+      "adaptive_prediction": 2,
+      "residual_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "directed_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "expanded": 0,
+      "gold": 2,
+      "gold_token_positions": [],
+      "base_boundary_distance": null
+    },
+    {
+      "group": 13,
+      "query": 3,
+      "answer_kind": "number",
+      "prompt_tokens": 453,
+      "phase_losses": {
+        "base0": [
+          7.8448076248168945,
+          8.162723541259766,
+          4.670068264007568,
+          8.19994831085205
+        ],
+        "base4": [
+          7.0883564949035645,
+          7.547287940979004,
+          4.229334831237793,
+          7.569232940673828
+        ],
+        "base8": [
+          7.245226860046387,
+          7.5873212814331055,
+          4.407729148864746,
+          7.600704193115234
+        ],
+        "base12": [
+          7.459326267242432,
+          7.749202251434326,
+          4.449872016906738,
+          7.726449489593506
+        ]
+      },
+      "phase_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "poly4_prediction": 2,
+      "adaptive_prediction": 2,
+      "residual_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "directed_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "expanded": 0,
+      "gold": 3,
+      "gold_token_positions": [
+        259,
+        351
+      ],
+      "base_boundary_distance": 0
+    },
+    {
+      "group": 14,
+      "query": 0,
+      "answer_kind": "proper",
+      "prompt_tokens": 479,
+      "phase_losses": {
+        "base0": [
+          11.13470458984375,
+          9.037639617919922,
+          9.642364501953125,
+          9.301789283752441
+        ],
+        "base4": [
+          11.012062072753906,
+          8.708856582641602,
+          9.561553955078125,
+          9.320417404174805
+        ],
+        "base8": [
+          11.171223640441895,
+          9.046220779418945,
+          9.872529029846191,
+          9.58957576751709
+        ],
+        "base12": [
+          11.183882713317871,
+          9.021201133728027,
+          10.006587982177734,
+          9.408903121948242
+        ]
+      },
+      "phase_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "poly4_prediction": 1,
+      "adaptive_prediction": 1,
+      "residual_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "directed_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "expanded": 0,
+      "gold": 0,
+      "gold_token_positions": [
+        124
+      ],
+      "base_boundary_distance": 3
+    },
+    {
+      "group": 14,
+      "query": 1,
+      "answer_kind": "proper",
+      "prompt_tokens": 472,
+      "phase_losses": {
+        "base0": [
+          10.026670455932617,
+          8.684732437133789,
+          9.601550102233887,
+          7.243037700653076
+        ],
+        "base4": [
+          10.273106575012207,
+          8.301143646240234,
+          9.583312034606934,
+          7.28009557723999
+        ],
+        "base8": [
+          9.990575790405273,
+          8.43445873260498,
+          9.601481437683105,
+          7.769588470458984
+        ],
+        "base12": [
+          9.887310981750488,
+          8.30477237701416,
+          9.43244743347168,
+          7.74993896484375
+        ]
+      },
+      "phase_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "poly4_prediction": 3,
+      "adaptive_prediction": 3,
+      "residual_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "directed_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "expanded": 0,
+      "gold": 1,
+      "gold_token_positions": [
+        192
+      ],
+      "base_boundary_distance": 0
+    },
+    {
+      "group": 14,
+      "query": 2,
+      "answer_kind": "proper",
+      "prompt_tokens": 477,
+      "phase_losses": {
+        "base0": [
+          10.271017074584961,
+          8.579513549804688,
+          3.800957679748535,
+          7.362015724182129
+        ],
+        "base4": [
+          10.083617210388184,
+          8.172425270080566,
+          3.901099681854248,
+          7.078829765319824
+        ],
+        "base8": [
+          10.47683048248291,
+          8.594151496887207,
+          4.164353847503662,
+          7.648367404937744
+        ],
+        "base12": [
+          10.135494232177734,
+          7.91995906829834,
+          3.8321123123168945,
+          7.236729145050049
+        ]
+      },
+      "phase_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "poly4_prediction": 2,
+      "adaptive_prediction": 2,
+      "residual_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "directed_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "expanded": 0,
+      "gold": 2,
+      "gold_token_positions": [],
+      "base_boundary_distance": null
+    },
+    {
+      "group": 14,
+      "query": 3,
+      "answer_kind": "proper",
+      "prompt_tokens": 472,
+      "phase_losses": {
+        "base0": [
+          8.836044311523438,
+          8.000432968139648,
+          8.672603607177734,
+          5.857158184051514
+        ],
+        "base4": [
+          8.966761589050293,
+          7.530340194702148,
+          8.713776588439941,
+          5.795609474182129
+        ],
+        "base8": [
+          9.044597625732422,
+          7.786328315734863,
+          8.38000202178955,
+          6.699389934539795
+        ],
+        "base12": [
+          8.71471118927002,
+          7.619637489318848,
+          8.269193649291992,
+          6.311389923095703
+        ]
+      },
+      "phase_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "poly4_prediction": 3,
+      "adaptive_prediction": 3,
+      "residual_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "directed_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "expanded": 0,
+      "gold": 3,
+      "gold_token_positions": [
+        412
+      ],
+      "base_boundary_distance": 3
+    },
+    {
+      "group": 15,
+      "query": 0,
+      "answer_kind": "other",
+      "prompt_tokens": 496,
+      "phase_losses": {
+        "base0": [
+          10.470794677734375,
+          13.56922435760498,
+          13.265233039855957,
+          11.436711311340332
+        ],
+        "base4": [
+          10.813606262207031,
+          13.918261528015137,
+          13.700018882751465,
+          11.80406665802002
+        ],
+        "base8": [
+          10.836565971374512,
+          14.149419784545898,
+          13.550193786621094,
+          11.645395278930664
+        ],
+        "base12": [
+          11.406639099121094,
+          14.466388702392578,
+          14.04036808013916,
+          11.901517868041992
+        ]
+      },
+      "phase_predictions": {
+        "base0": 0,
+        "base4": 0,
+        "base8": 0,
+        "base12": 0
+      },
+      "poly4_prediction": 0,
+      "adaptive_prediction": 0,
+      "residual_predictions": {
+        "base0": 0,
+        "base4": 0,
+        "base8": 0,
+        "base12": 0
+      },
+      "directed_predictions": {
+        "base0": 0,
+        "base4": 0,
+        "base8": 0,
+        "base12": 0
+      },
+      "expanded": 0,
+      "gold": 0,
+      "gold_token_positions": [
+        72,
+        149,
+        168
+      ],
+      "base_boundary_distance": 5
+    },
+    {
+      "group": 15,
+      "query": 1,
+      "answer_kind": "other",
+      "prompt_tokens": 498,
+      "phase_losses": {
+        "base0": [
+          12.072455406188965,
+          10.994179725646973,
+          13.81142520904541,
+          12.863935470581055
+        ],
+        "base4": [
+          11.661765098571777,
+          10.502546310424805,
+          13.292609214782715,
+          12.630471229553223
+        ],
+        "base8": [
+          11.80669116973877,
+          10.570466995239258,
+          13.56966781616211,
+          12.616604804992676
+        ],
+        "base12": [
+          12.30491828918457,
+          11.022881507873535,
+          14.223706245422363,
+          12.920060157775879
+        ]
+      },
+      "phase_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "poly4_prediction": 1,
+      "adaptive_prediction": 1,
+      "residual_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "directed_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "expanded": 0,
+      "gold": 1,
+      "gold_token_positions": [
+        124
+      ],
+      "base_boundary_distance": 3
+    },
+    {
+      "group": 15,
+      "query": 2,
+      "answer_kind": "other",
+      "prompt_tokens": 493,
+      "phase_losses": {
+        "base0": [
+          11.487070083618164,
+          12.646500587463379,
+          8.710582733154297,
+          11.72143268585205
+        ],
+        "base4": [
+          11.98058032989502,
+          13.021570205688477,
+          9.417999267578125,
+          12.087200164794922
+        ],
+        "base8": [
+          12.060595512390137,
+          13.30239200592041,
+          9.509538650512695,
+          12.193330764770508
+        ],
+        "base12": [
+          12.157159805297852,
+          13.40090274810791,
+          9.77275276184082,
+          12.378339767456055
+        ]
+      },
+      "phase_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "poly4_prediction": 2,
+      "adaptive_prediction": 2,
+      "residual_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "directed_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "expanded": 0,
+      "gold": 2,
+      "gold_token_positions": [
+        293,
+        327
+      ],
+      "base_boundary_distance": 5
+    },
+    {
+      "group": 15,
+      "query": 3,
+      "answer_kind": "other",
+      "prompt_tokens": 492,
+      "phase_losses": {
+        "base0": [
+          16.302141189575195,
+          15.563444137573242,
+          15.414520263671875,
+          12.730520248413086
+        ],
+        "base4": [
+          16.589439392089844,
+          16.037660598754883,
+          15.75322437286377,
+          12.724376678466797
+        ],
+        "base8": [
+          16.55179786682129,
+          16.12729835510254,
+          15.774532318115234,
+          12.773810386657715
+        ],
+        "base12": [
+          16.28952980041504,
+          15.488471984863281,
+          15.689449310302734,
+          12.712577819824219
+        ]
+      },
+      "phase_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "poly4_prediction": 3,
+      "adaptive_prediction": 3,
+      "residual_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "directed_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "expanded": 0,
+      "gold": 3,
+      "gold_token_positions": [
+        460
+      ],
+      "base_boundary_distance": 3
+    },
+    {
+      "group": 16,
+      "query": 0,
+      "answer_kind": "proper",
+      "prompt_tokens": 492,
+      "phase_losses": {
+        "base0": [
+          12.643484115600586,
+          6.213560581207275,
+          4.529930114746094,
+          10.011273384094238
+        ],
+        "base4": [
+          12.799417495727539,
+          6.515825271606445,
+          4.861091613769531,
+          9.810596466064453
+        ],
+        "base8": [
+          13.076430320739746,
+          6.7143964767456055,
+          4.914080619812012,
+          9.965523719787598
+        ],
+        "base12": [
+          12.575664520263672,
+          6.598125457763672,
+          5.197871685028076,
+          9.870572090148926
+        ]
+      },
+      "phase_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "poly4_prediction": 2,
+      "adaptive_prediction": 2,
+      "residual_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "directed_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "expanded": 0,
+      "gold": 0,
+      "gold_token_positions": [
+        91
+      ],
+      "base_boundary_distance": 4
+    },
+    {
+      "group": 16,
+      "query": 1,
+      "answer_kind": "proper",
+      "prompt_tokens": 495,
+      "phase_losses": {
+        "base0": [
+          12.389496803283691,
+          5.206751346588135,
+          3.3637900352478027,
+          11.836524963378906
+        ],
+        "base4": [
+          12.869256019592285,
+          5.725437164306641,
+          3.59354305267334,
+          11.88518238067627
+        ],
+        "base8": [
+          13.26263427734375,
+          5.752580165863037,
+          3.29931640625,
+          11.854788780212402
+        ],
+        "base12": [
+          12.674629211425781,
+          4.593392372131348,
+          2.9934186935424805,
+          11.686324119567871
+        ]
+      },
+      "phase_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "poly4_prediction": 2,
+      "adaptive_prediction": 2,
+      "residual_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "directed_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "expanded": 0,
+      "gold": 1,
+      "gold_token_positions": [
+        210
+      ],
+      "base_boundary_distance": 2
+    },
+    {
+      "group": 16,
+      "query": 2,
+      "answer_kind": "proper",
+      "prompt_tokens": 492,
+      "phase_losses": {
+        "base0": [
+          14.323966979980469,
+          6.435495376586914,
+          2.4707164764404297,
+          10.532951354980469
+        ],
+        "base4": [
+          14.6602201461792,
+          6.587519645690918,
+          2.394761085510254,
+          10.587443351745605
+        ],
+        "base8": [
+          14.470782279968262,
+          6.173539161682129,
+          2.452674150466919,
+          10.771538734436035
+        ],
+        "base12": [
+          13.902897834777832,
+          5.4277873039245605,
+          2.599205493927002,
+          10.319352149963379
+        ]
+      },
+      "phase_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "poly4_prediction": 2,
+      "adaptive_prediction": 2,
+      "residual_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "directed_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "expanded": 0,
+      "gold": 2,
+      "gold_token_positions": [
+        318
+      ],
+      "base_boundary_distance": 1
+    },
+    {
+      "group": 16,
+      "query": 3,
+      "answer_kind": "proper",
+      "prompt_tokens": 492,
+      "phase_losses": {
+        "base0": [
+          15.558991432189941,
+          8.471513748168945,
+          7.208369731903076,
+          6.519611835479736
+        ],
+        "base4": [
+          15.304537773132324,
+          8.27248764038086,
+          7.336113452911377,
+          6.435389518737793
+        ],
+        "base8": [
+          15.550556182861328,
+          8.397045135498047,
+          7.314448833465576,
+          6.167144298553467
+        ],
+        "base12": [
+          15.107870101928711,
+          8.299158096313477,
+          7.395537376403809,
+          6.172088623046875
+        ]
+      },
+      "phase_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "poly4_prediction": 3,
+      "adaptive_prediction": 3,
+      "residual_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "directed_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "expanded": 0,
+      "gold": 3,
+      "gold_token_positions": [
+        421
+      ],
+      "base_boundary_distance": 5
+    },
+    {
+      "group": 17,
+      "query": 0,
+      "answer_kind": "number",
+      "prompt_tokens": 497,
+      "phase_losses": {
+        "base0": [
+          8.055205345153809,
+          7.748781681060791,
+          8.580705642700195,
+          7.171684265136719
+        ],
+        "base4": [
+          7.798513412475586,
+          7.73397159576416,
+          8.671913146972656,
+          7.02381706237793
+        ],
+        "base8": [
+          7.724443435668945,
+          7.5807929039001465,
+          8.495128631591797,
+          7.021693706512451
+        ],
+        "base12": [
+          8.38447380065918,
+          8.086810111999512,
+          8.927361488342285,
+          7.558603286743164
+        ]
+      },
+      "phase_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "poly4_prediction": 3,
+      "adaptive_prediction": 3,
+      "residual_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "directed_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "expanded": 0,
+      "gold": 0,
+      "gold_token_positions": [
+        51
+      ],
+      "base_boundary_distance": 3
+    },
+    {
+      "group": 17,
+      "query": 1,
+      "answer_kind": "number",
+      "prompt_tokens": 503,
+      "phase_losses": {
+        "base0": [
+          7.4423627853393555,
+          7.613409042358398,
+          8.341517448425293,
+          7.325697422027588
+        ],
+        "base4": [
+          8.362628936767578,
+          8.533600807189941,
+          9.228324890136719,
+          8.26471996307373
+        ],
+        "base8": [
+          7.892182350158691,
+          8.111710548400879,
+          8.84631061553955,
+          7.8504838943481445
+        ],
+        "base12": [
+          7.958969593048096,
+          8.142908096313477,
+          8.795995712280273,
+          7.801665782928467
+        ]
+      },
+      "phase_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "poly4_prediction": 3,
+      "adaptive_prediction": 3,
+      "residual_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "directed_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "expanded": 0,
+      "gold": 1,
+      "gold_token_positions": [
+        179
+      ],
+      "base_boundary_distance": 3
+    },
+    {
+      "group": 17,
+      "query": 2,
+      "answer_kind": "number",
+      "prompt_tokens": 498,
+      "phase_losses": {
+        "base0": [
+          7.283073425292969,
+          7.104456424713135,
+          7.797793388366699,
+          6.8934807777404785
+        ],
+        "base4": [
+          7.439409255981445,
+          7.378750801086426,
+          8.126947402954102,
+          7.105899810791016
+        ],
+        "base8": [
+          7.254599571228027,
+          7.060421466827393,
+          7.772457599639893,
+          6.912290573120117
+        ],
+        "base12": [
+          7.692422389984131,
+          7.508862495422363,
+          8.180703163146973,
+          7.339722633361816
+        ]
+      },
+      "phase_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "poly4_prediction": 3,
+      "adaptive_prediction": 3,
+      "residual_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "directed_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "expanded": 0,
+      "gold": 2,
+      "gold_token_positions": [
+        275
+      ],
+      "base_boundary_distance": 3
+    },
+    {
+      "group": 17,
+      "query": 3,
+      "answer_kind": "number",
+      "prompt_tokens": 501,
+      "phase_losses": {
+        "base0": [
+          7.0450358390808105,
+          7.06661319732666,
+          7.568224906921387,
+          6.744044780731201
+        ],
+        "base4": [
+          7.2681169509887695,
+          7.341487884521484,
+          7.851840019226074,
+          7.029362678527832
+        ],
+        "base8": [
+          7.032124996185303,
+          7.067494869232178,
+          7.561750411987305,
+          6.802940368652344
+        ],
+        "base12": [
+          7.253880500793457,
+          7.236944675445557,
+          7.668292999267578,
+          6.994543552398682
+        ]
+      },
+      "phase_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "poly4_prediction": 3,
+      "adaptive_prediction": 3,
+      "residual_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "directed_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "expanded": 0,
+      "gold": 3,
+      "gold_token_positions": [
+        42,
+        287,
+        398
+      ],
+      "base_boundary_distance": 0
+    },
+    {
+      "group": 18,
+      "query": 0,
+      "answer_kind": "other",
+      "prompt_tokens": 379,
+      "phase_losses": {
+        "base0": [
+          12.134637832641602,
+          13.891225814819336,
+          11.749809265136719,
+          13.833681106567383
+        ],
+        "base4": [
+          11.869348526000977,
+          13.711501121520996,
+          11.559056282043457,
+          13.66061782836914
+        ],
+        "base8": [
+          12.222352981567383,
+          13.771220207214355,
+          11.785980224609375,
+          13.878045082092285
+        ],
+        "base12": [
+          11.862760543823242,
+          13.719889640808105,
+          11.784412384033203,
+          13.447526931762695
+        ]
+      },
+      "phase_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "poly4_prediction": 2,
+      "adaptive_prediction": 2,
+      "residual_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "directed_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "expanded": 0,
+      "gold": 0,
+      "gold_token_positions": [
+        39
+      ],
+      "base_boundary_distance": 7
+    },
+    {
+      "group": 18,
+      "query": 1,
+      "answer_kind": "other",
+      "prompt_tokens": 382,
+      "phase_losses": {
+        "base0": [
+          17.737199783325195,
+          11.450562477111816,
+          15.695306777954102,
+          14.27069091796875
+        ],
+        "base4": [
+          17.435150146484375,
+          11.279646873474121,
+          15.287341117858887,
+          14.212584495544434
+        ],
+        "base8": [
+          17.439088821411133,
+          11.545604705810547,
+          15.310300827026367,
+          14.3799409866333
+        ],
+        "base12": [
+          17.533533096313477,
+          11.923337936401367,
+          15.639925003051758,
+          14.327995300292969
+        ]
+      },
+      "phase_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "poly4_prediction": 1,
+      "adaptive_prediction": 1,
+      "residual_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "directed_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "expanded": 0,
+      "gold": 1,
+      "gold_token_positions": [
+        96,
+        142,
+        154,
+        196
+      ],
+      "base_boundary_distance": 0
+    },
+    {
+      "group": 18,
+      "query": 2,
+      "answer_kind": "other",
+      "prompt_tokens": 378,
+      "phase_losses": {
+        "base0": [
+          14.550398826599121,
+          13.27920150756836,
+          5.9240922927856445,
+          15.578804016113281
+        ],
+        "base4": [
+          14.86398696899414,
+          13.585882186889648,
+          6.404533863067627,
+          15.465126037597656
+        ],
+        "base8": [
+          14.728504180908203,
+          13.673846244812012,
+          6.299447536468506,
+          15.639004707336426
+        ],
+        "base12": [
+          14.849283218383789,
+          13.65465259552002,
+          6.125141143798828,
+          15.852264404296875
+        ]
+      },
+      "phase_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "poly4_prediction": 2,
+      "adaptive_prediction": 2,
+      "residual_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "directed_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "expanded": 0,
+      "gold": 2,
+      "gold_token_positions": [
+        242,
+        285
+      ],
+      "base_boundary_distance": 2
+    },
+    {
+      "group": 18,
+      "query": 3,
+      "answer_kind": "other",
+      "prompt_tokens": 380,
+      "phase_losses": {
+        "base0": [
+          16.08823013305664,
+          14.264240264892578,
+          14.651091575622559,
+          11.767243385314941
+        ],
+        "base4": [
+          15.916056632995605,
+          14.308886528015137,
+          14.701655387878418,
+          12.441614151000977
+        ],
+        "base8": [
+          15.750116348266602,
+          14.417325973510742,
+          14.327661514282227,
+          12.355010986328125
+        ],
+        "base12": [
+          15.869731903076172,
+          14.199973106384277,
+          14.119019508361816,
+          11.85155963897705
+        ]
+      },
+      "phase_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "poly4_prediction": 3,
+      "adaptive_prediction": 3,
+      "residual_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "directed_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "expanded": 0,
+      "gold": 3,
+      "gold_token_positions": [
+        330
+      ],
+      "base_boundary_distance": 5
+    },
+    {
+      "group": 19,
+      "query": 0,
+      "answer_kind": "number",
+      "prompt_tokens": 466,
+      "phase_losses": {
+        "base0": [
+          8.819496154785156,
+          8.734994888305664,
+          8.900289535522461,
+          8.75188159942627
+        ],
+        "base4": [
+          9.079793930053711,
+          8.970518112182617,
+          9.309440612792969,
+          8.951693534851074
+        ],
+        "base8": [
+          9.164833068847656,
+          9.041193008422852,
+          9.26261043548584,
+          9.10814094543457
+        ],
+        "base12": [
+          9.10986328125,
+          9.02535629272461,
+          9.228693008422852,
+          8.960789680480957
+        ]
+      },
+      "phase_predictions": {
+        "base0": 1,
+        "base4": 3,
+        "base8": 1,
+        "base12": 3
+      },
+      "poly4_prediction": 3,
+      "adaptive_prediction": 1,
+      "residual_predictions": {
+        "base0": 1,
+        "base4": 3,
+        "base8": 1,
+        "base12": 3
+      },
+      "directed_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 3
+      },
+      "expanded": 0,
+      "gold": 0,
+      "gold_token_positions": [
+        152,
+        430
+      ],
+      "base_boundary_distance": 1
+    },
+    {
+      "group": 19,
+      "query": 1,
+      "answer_kind": "number",
+      "prompt_tokens": 472,
+      "phase_losses": {
+        "base0": [
+          8.969826698303223,
+          8.620140075683594,
+          9.021964073181152,
+          9.158464431762695
+        ],
+        "base4": [
+          9.082921981811523,
+          8.699568748474121,
+          9.119078636169434,
+          9.336071968078613
+        ],
+        "base8": [
+          8.810049057006836,
+          8.467390060424805,
+          8.995718955993652,
+          9.034477233886719
+        ],
+        "base12": [
+          8.550586700439453,
+          8.199904441833496,
+          8.679614067077637,
+          8.711350440979004
+        ]
+      },
+      "phase_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "poly4_prediction": 1,
+      "adaptive_prediction": 1,
+      "residual_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "directed_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "expanded": 0,
+      "gold": 1,
+      "gold_token_positions": [
+        188
+      ],
+      "base_boundary_distance": 3
+    },
+    {
+      "group": 19,
+      "query": 2,
+      "answer_kind": "number",
+      "prompt_tokens": 467,
+      "phase_losses": {
+        "base0": [
+          8.543614387512207,
+          8.433951377868652,
+          8.652026176452637,
+          8.971641540527344
+        ],
+        "base4": [
+          8.462224006652832,
+          8.340230941772461,
+          8.773374557495117,
+          8.813604354858398
+        ],
+        "base8": [
+          8.459741592407227,
+          8.242761611938477,
+          8.611480712890625,
+          8.893431663513184
+        ],
+        "base12": [
+          8.501033782958984,
+          8.362521171569824,
+          8.681700706481934,
+          8.858719825744629
+        ]
+      },
+      "phase_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "poly4_prediction": 1,
+      "adaptive_prediction": 1,
+      "residual_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "directed_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "expanded": 0,
+      "gold": 2,
+      "gold_token_positions": [
+        308,
+        399
+      ],
+      "base_boundary_distance": 0
+    },
+    {
+      "group": 19,
+      "query": 3,
+      "answer_kind": "number",
+      "prompt_tokens": 465,
+      "phase_losses": {
+        "base0": [
+          7.65816593170166,
+          7.657728672027588,
+          7.678555488586426,
+          7.365091800689697
+        ],
+        "base4": [
+          7.935695171356201,
+          7.883913516998291,
+          8.048421859741211,
+          7.551839828491211
+        ],
+        "base8": [
+          8.009978294372559,
+          7.982171535491943,
+          8.033084869384766,
+          7.675113677978516
+        ],
+        "base12": [
+          7.843744277954102,
+          7.878843307495117,
+          7.9203290939331055,
+          7.493862152099609
+        ]
+      },
+      "phase_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "poly4_prediction": 3,
+      "adaptive_prediction": 3,
+      "residual_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "directed_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "expanded": 0,
+      "gold": 3,
+      "gold_token_positions": [
+        195,
+        393
+      ],
+      "base_boundary_distance": 3
+    },
+    {
+      "group": 20,
+      "query": 0,
+      "answer_kind": "other",
+      "prompt_tokens": 504,
+      "phase_losses": {
+        "base0": [
+          9.94064998626709,
+          12.009830474853516,
+          14.674330711364746,
+          15.330591201782227
+        ],
+        "base4": [
+          10.232917785644531,
+          11.902828216552734,
+          14.843720436096191,
+          15.129362106323242
+        ],
+        "base8": [
+          9.615180969238281,
+          11.609734535217285,
+          15.11294937133789,
+          15.191617012023926
+        ],
+        "base12": [
+          9.491912841796875,
+          11.570255279541016,
+          14.609945297241211,
+          15.143217086791992
+        ]
+      },
+      "phase_predictions": {
+        "base0": 0,
+        "base4": 0,
+        "base8": 0,
+        "base12": 0
+      },
+      "poly4_prediction": 0,
+      "adaptive_prediction": 0,
+      "residual_predictions": {
+        "base0": 0,
+        "base4": 0,
+        "base8": 0,
+        "base12": 0
+      },
+      "directed_predictions": {
+        "base0": 0,
+        "base4": 0,
+        "base8": 0,
+        "base12": 0
+      },
+      "expanded": 0,
+      "gold": 0,
+      "gold_token_positions": [
+        25,
+        57,
+        92,
+        110
+      ],
+      "base_boundary_distance": 1
+    },
+    {
+      "group": 20,
+      "query": 1,
+      "answer_kind": "other",
+      "prompt_tokens": 494,
+      "phase_losses": {
+        "base0": [
+          12.577695846557617,
+          11.028251647949219,
+          15.812042236328125,
+          17.192108154296875
+        ],
+        "base4": [
+          12.812636375427246,
+          11.293340682983398,
+          16.0076961517334,
+          17.235015869140625
+        ],
+        "base8": [
+          13.267070770263672,
+          11.100168228149414,
+          16.108646392822266,
+          17.203371047973633
+        ],
+        "base12": [
+          13.450090408325195,
+          11.221856117248535,
+          16.00585174560547,
+          17.355072021484375
+        ]
+      },
+      "phase_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "poly4_prediction": 1,
+      "adaptive_prediction": 1,
+      "residual_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "directed_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "expanded": 0,
+      "gold": 1,
+      "gold_token_positions": [
+        187
+      ],
+      "base_boundary_distance": 4
+    },
+    {
+      "group": 20,
+      "query": 2,
+      "answer_kind": "other",
+      "prompt_tokens": 504,
+      "phase_losses": {
+        "base0": [
+          13.256773948669434,
+          15.37621021270752,
+          11.925813674926758,
+          16.61330795288086
+        ],
+        "base4": [
+          12.975128173828125,
+          14.880396842956543,
+          12.042473793029785,
+          16.36284065246582
+        ],
+        "base8": [
+          12.619732856750488,
+          15.023442268371582,
+          12.27068042755127,
+          16.540184020996094
+        ],
+        "base12": [
+          13.070452690124512,
+          15.28125286102295,
+          12.255160331726074,
+          16.543930053710938
+        ]
+      },
+      "phase_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "poly4_prediction": 2,
+      "adaptive_prediction": 2,
+      "residual_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "directed_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "expanded": 0,
+      "gold": 2,
+      "gold_token_positions": [
+        367
+      ],
+      "base_boundary_distance": 0
+    },
+    {
+      "group": 20,
+      "query": 3,
+      "answer_kind": "other",
+      "prompt_tokens": 485,
+      "phase_losses": {
+        "base0": [
+          14.858620643615723,
+          12.121395111083984,
+          14.444305419921875,
+          12.216678619384766
+        ],
+        "base4": [
+          15.181219100952148,
+          12.582704544067383,
+          14.544763565063477,
+          12.013336181640625
+        ],
+        "base8": [
+          15.008565902709961,
+          12.091740608215332,
+          14.657267570495605,
+          12.029409408569336
+        ],
+        "base12": [
+          15.288131713867188,
+          12.162603378295898,
+          14.63556957244873,
+          12.241575241088867
+        ]
+      },
+      "phase_predictions": {
+        "base0": 1,
+        "base4": 3,
+        "base8": 3,
+        "base12": 1
+      },
+      "poly4_prediction": 3,
+      "adaptive_prediction": 3,
+      "residual_predictions": {
+        "base0": 1,
+        "base4": 3,
+        "base8": 3,
+        "base12": 1
+      },
+      "directed_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 1
+      },
+      "expanded": 1,
+      "gold": 3,
+      "gold_token_positions": [
+        434
+      ],
+      "base_boundary_distance": 2
+    },
+    {
+      "group": 21,
+      "query": 0,
+      "answer_kind": "proper",
+      "prompt_tokens": 432,
+      "phase_losses": {
+        "base0": [
+          9.937604904174805,
+          6.403477668762207,
+          8.926137924194336,
+          11.278796195983887
+        ],
+        "base4": [
+          10.002998352050781,
+          6.611371994018555,
+          8.746010780334473,
+          11.045380592346191
+        ],
+        "base8": [
+          10.981282234191895,
+          6.792291641235352,
+          9.088897705078125,
+          11.520537376403809
+        ],
+        "base12": [
+          10.383493423461914,
+          6.618382453918457,
+          9.230905532836914,
+          11.158289909362793
+        ]
+      },
+      "phase_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "poly4_prediction": 1,
+      "adaptive_prediction": 1,
+      "residual_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "directed_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "expanded": 0,
+      "gold": 0,
+      "gold_token_positions": [],
+      "base_boundary_distance": null
+    },
+    {
+      "group": 21,
+      "query": 1,
+      "answer_kind": "proper",
+      "prompt_tokens": 434,
+      "phase_losses": {
+        "base0": [
+          10.97488784790039,
+          5.1797308921813965,
+          10.750697135925293,
+          13.138750076293945
+        ],
+        "base4": [
+          10.630346298217773,
+          4.75257682800293,
+          10.795570373535156,
+          12.930970191955566
+        ],
+        "base8": [
+          11.02517318725586,
+          4.437680721282959,
+          10.514835357666016,
+          12.90200424194336
+        ],
+        "base12": [
+          10.901265144348145,
+          4.868475914001465,
+          11.219085693359375,
+          13.832154273986816
+        ]
+      },
+      "phase_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "poly4_prediction": 1,
+      "adaptive_prediction": 1,
+      "residual_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "directed_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "expanded": 0,
+      "gold": 1,
+      "gold_token_positions": [],
+      "base_boundary_distance": null
+    },
+    {
+      "group": 21,
+      "query": 2,
+      "answer_kind": "proper",
+      "prompt_tokens": 434,
+      "phase_losses": {
+        "base0": [
+          12.988044738769531,
+          8.59489631652832,
+          6.487042427062988,
+          14.241207122802734
+        ],
+        "base4": [
+          13.151867866516113,
+          8.058104515075684,
+          6.075214385986328,
+          13.769082069396973
+        ],
+        "base8": [
+          13.284600257873535,
+          8.042372703552246,
+          6.323714256286621,
+          14.01189136505127
+        ],
+        "base12": [
+          13.011924743652344,
+          8.182327270507812,
+          6.422912120819092,
+          14.09539794921875
+        ]
+      },
+      "phase_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "poly4_prediction": 2,
+      "adaptive_prediction": 2,
+      "residual_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "directed_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "expanded": 0,
+      "gold": 2,
+      "gold_token_positions": [
+        191,
+        205
+      ],
+      "base_boundary_distance": 0
+    },
+    {
+      "group": 21,
+      "query": 3,
+      "answer_kind": "proper",
+      "prompt_tokens": 433,
+      "phase_losses": {
+        "base0": [
+          10.751630783081055,
+          6.109380722045898,
+          8.206764221191406,
+          8.626768112182617
+        ],
+        "base4": [
+          10.65366268157959,
+          5.9542927742004395,
+          8.264062881469727,
+          8.229498863220215
+        ],
+        "base8": [
+          10.650161743164062,
+          5.831060409545898,
+          8.133435249328613,
+          8.811552047729492
+        ],
+        "base12": [
+          10.611824989318848,
+          5.942111968994141,
+          8.269416809082031,
+          8.498213768005371
+        ]
+      },
+      "phase_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "poly4_prediction": 1,
+      "adaptive_prediction": 1,
+      "residual_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "directed_predictions": {
+        "base0": 1,
+        "base4": 1,
+        "base8": 1,
+        "base12": 1
+      },
+      "expanded": 0,
+      "gold": 3,
+      "gold_token_positions": [
+        299
+      ],
+      "base_boundary_distance": 4
+    },
+    {
+      "group": 22,
+      "query": 0,
+      "answer_kind": "other",
+      "prompt_tokens": 407,
+      "phase_losses": {
+        "base0": [
+          14.182887077331543,
+          15.709121704101562,
+          14.630282402038574,
+          14.842040061950684
+        ],
+        "base4": [
+          14.74804401397705,
+          15.58476448059082,
+          15.19322395324707,
+          14.991399765014648
+        ],
+        "base8": [
+          13.839324951171875,
+          15.175201416015625,
+          14.199533462524414,
+          14.55500316619873
+        ],
+        "base12": [
+          13.904784202575684,
+          15.185737609863281,
+          14.367865562438965,
+          14.806368827819824
+        ]
+      },
+      "phase_predictions": {
+        "base0": 0,
+        "base4": 0,
+        "base8": 0,
+        "base12": 0
+      },
+      "poly4_prediction": 0,
+      "adaptive_prediction": 0,
+      "residual_predictions": {
+        "base0": 0,
+        "base4": 0,
+        "base8": 0,
+        "base12": 0
+      },
+      "directed_predictions": {
+        "base0": 0,
+        "base4": 0,
+        "base8": 0,
+        "base12": 0
+      },
+      "expanded": 0,
+      "gold": 0,
+      "gold_token_positions": [
+        35
+      ],
+      "base_boundary_distance": 3
+    },
+    {
+      "group": 22,
+      "query": 1,
+      "answer_kind": "other",
+      "prompt_tokens": 402,
+      "phase_losses": {
+        "base0": [
+          12.939384460449219,
+          13.291252136230469,
+          14.364189147949219,
+          14.383856773376465
+        ],
+        "base4": [
+          13.18386459350586,
+          13.377452850341797,
+          14.425140380859375,
+          14.445301055908203
+        ],
+        "base8": [
+          13.095457077026367,
+          13.214356422424316,
+          14.239812850952148,
+          14.478315353393555
+        ],
+        "base12": [
+          12.962577819824219,
+          12.833539962768555,
+          14.222505569458008,
+          14.477106094360352
+        ]
+      },
+      "phase_predictions": {
+        "base0": 0,
+        "base4": 0,
+        "base8": 0,
+        "base12": 1
+      },
+      "poly4_prediction": 0,
+      "adaptive_prediction": 0,
+      "residual_predictions": {
+        "base0": 0,
+        "base4": 0,
+        "base8": 0,
+        "base12": 1
+      },
+      "directed_predictions": {
+        "base0": 0,
+        "base4": 0,
+        "base8": 0,
+        "base12": 1
+      },
+      "expanded": 0,
+      "gold": 1,
+      "gold_token_positions": [
+        145
+      ],
+      "base_boundary_distance": 1
+    },
+    {
+      "group": 22,
+      "query": 2,
+      "answer_kind": "other",
+      "prompt_tokens": 412,
+      "phase_losses": {
+        "base0": [
+          14.02929973602295,
+          14.010725021362305,
+          13.090713500976562,
+          15.192910194396973
+        ],
+        "base4": [
+          14.297159194946289,
+          14.196746826171875,
+          13.57867431640625,
+          15.35357666015625
+        ],
+        "base8": [
+          14.361263275146484,
+          14.190123558044434,
+          13.305627822875977,
+          15.28792953491211
+        ],
+        "base12": [
+          13.739916801452637,
+          13.764729499816895,
+          12.622218132019043,
+          14.981682777404785
+        ]
+      },
+      "phase_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "poly4_prediction": 2,
+      "adaptive_prediction": 2,
+      "residual_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "directed_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "expanded": 0,
+      "gold": 2,
+      "gold_token_positions": [
+        276
+      ],
+      "base_boundary_distance": 4
+    },
+    {
+      "group": 22,
+      "query": 3,
+      "answer_kind": "other",
+      "prompt_tokens": 405,
+      "phase_losses": {
+        "base0": [
+          15.376070976257324,
+          15.352346420288086,
+          13.90461540222168,
+          13.626043319702148
+        ],
+        "base4": [
+          15.556168556213379,
+          15.215184211730957,
+          14.218015670776367,
+          13.967732429504395
+        ],
+        "base8": [
+          15.73588752746582,
+          15.772666931152344,
+          13.656099319458008,
+          13.780101776123047
+        ],
+        "base12": [
+          15.329468727111816,
+          15.297330856323242,
+          13.301697731018066,
+          13.5198974609375
+        ]
+      },
+      "phase_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 2,
+        "base12": 2
+      },
+      "poly4_prediction": 3,
+      "adaptive_prediction": 3,
+      "residual_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 2,
+        "base12": 2
+      },
+      "directed_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 2,
+        "base12": 2
+      },
+      "expanded": 1,
+      "gold": 3,
+      "gold_token_positions": [
+        348
+      ],
+      "base_boundary_distance": 3
+    },
+    {
+      "group": 23,
+      "query": 0,
+      "answer_kind": "other",
+      "prompt_tokens": 451,
+      "phase_losses": {
+        "base0": [
+          12.278800964355469,
+          15.476880073547363,
+          12.951065063476562,
+          12.573192596435547
+        ],
+        "base4": [
+          12.607425689697266,
+          15.251067161560059,
+          13.340642929077148,
+          12.4873685836792
+        ],
+        "base8": [
+          12.132771492004395,
+          15.397283554077148,
+          13.054793357849121,
+          12.346338272094727
+        ],
+        "base12": [
+          12.485074043273926,
+          15.6526460647583,
+          12.985001564025879,
+          12.099239349365234
+        ]
+      },
+      "phase_predictions": {
+        "base0": 0,
+        "base4": 3,
+        "base8": 0,
+        "base12": 3
+      },
+      "poly4_prediction": 0,
+      "adaptive_prediction": 0,
+      "residual_predictions": {
+        "base0": 0,
+        "base4": 3,
+        "base8": 0,
+        "base12": 3
+      },
+      "directed_predictions": {
+        "base0": 0,
+        "base4": 0,
+        "base8": 0,
+        "base12": 3
+      },
+      "expanded": 0,
+      "gold": 0,
+      "gold_token_positions": [
+        27
+      ],
+      "base_boundary_distance": 4
+    },
+    {
+      "group": 23,
+      "query": 1,
+      "answer_kind": "other",
+      "prompt_tokens": 460,
+      "phase_losses": {
+        "base0": [
+          14.487027168273926,
+          12.986920356750488,
+          12.344962120056152,
+          11.267312049865723
+        ],
+        "base4": [
+          14.62662124633789,
+          13.2230806350708,
+          12.164005279541016,
+          11.217804908752441
+        ],
+        "base8": [
+          14.812161445617676,
+          13.39011287689209,
+          12.449493408203125,
+          11.135661125183105
+        ],
+        "base12": [
+          14.654989242553711,
+          13.230350494384766,
+          11.869281768798828,
+          10.948246955871582
+        ]
+      },
+      "phase_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "poly4_prediction": 3,
+      "adaptive_prediction": 3,
+      "residual_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "directed_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "expanded": 0,
+      "gold": 1,
+      "gold_token_positions": [
+        271
+      ],
+      "base_boundary_distance": 0
+    },
+    {
+      "group": 23,
+      "query": 2,
+      "answer_kind": "other",
+      "prompt_tokens": 454,
+      "phase_losses": {
+        "base0": [
+          15.826526641845703,
+          15.444883346557617,
+          13.525115013122559,
+          14.178606986999512
+        ],
+        "base4": [
+          15.73746395111084,
+          15.268936157226562,
+          13.297445297241211,
+          14.095858573913574
+        ],
+        "base8": [
+          15.579325675964355,
+          15.383243560791016,
+          12.696041107177734,
+          13.48898696899414
+        ],
+        "base12": [
+          15.958755493164062,
+          15.454050064086914,
+          13.050800323486328,
+          13.652511596679688
+        ]
+      },
+      "phase_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "poly4_prediction": 2,
+      "adaptive_prediction": 2,
+      "residual_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "directed_predictions": {
+        "base0": 2,
+        "base4": 2,
+        "base8": 2,
+        "base12": 2
+      },
+      "expanded": 0,
+      "gold": 2,
+      "gold_token_positions": [
+        305,
+        310,
+        336
+      ],
+      "base_boundary_distance": 0
+    },
+    {
+      "group": 23,
+      "query": 3,
+      "answer_kind": "other",
+      "prompt_tokens": 454,
+      "phase_losses": {
+        "base0": [
+          16.872516632080078,
+          16.749561309814453,
+          14.161169052124023,
+          11.831829071044922
+        ],
+        "base4": [
+          16.677425384521484,
+          16.46226692199707,
+          14.051392555236816,
+          11.585162162780762
+        ],
+        "base8": [
+          16.475753784179688,
+          16.677444458007812,
+          13.698247909545898,
+          11.009793281555176
+        ],
+        "base12": [
+          16.863380432128906,
+          16.704259872436523,
+          13.926712989807129,
+          11.074487686157227
+        ]
+      },
+      "phase_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "poly4_prediction": 3,
+      "adaptive_prediction": 3,
+      "residual_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "directed_predictions": {
+        "base0": 3,
+        "base4": 3,
+        "base8": 3,
+        "base12": 3
+      },
+      "expanded": 0,
+      "gold": 3,
+      "gold_token_positions": [
+        364,
+        431
+      ],
+      "base_boundary_distance": 0
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+torch==2.6.0
+transformers==5.17.0
+safetensors==0.8.0
+huggingface-hub==1.32.0
+matplotlib>=3.8
+numpy>=1.26
